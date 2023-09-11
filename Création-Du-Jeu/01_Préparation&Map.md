@@ -42,7 +42,7 @@ Enfin, ajoute des monstres, des rubis, des clés et des coffres à des endroits 
 
 Si tu as besoin d'inspiration, voici un exemple de carte que j'ai créée :
 
-![Map](/image/Map.png)
+![Map](Images/Map.png)
 
 N'hésite pas à utiliser cette carte comme point de départ pour ta propre création. Et n'oublie pas, le plus important est de t'amuser et de créer un monde de jeu qui te plaît !
 

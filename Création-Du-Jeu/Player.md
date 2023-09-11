@@ -19,7 +19,7 @@ un top-down movement est un type de mouvement dans les jeux vidéo qui se caract
 
 On aimerait que le personnage n'ait pas d'inertie. Pour cela, on va effectuer une forte accélération vers une vitesse maximum lorsque l'on déplace notre personnage et une forte décélération lorsqu'on relâchera une touche de déplacement.
 
-[Image de comportement topDown]
+![TopDown](Images/TopDownPlayer.png)
 
 ## Variables
 
@@ -29,5 +29,5 @@ Pour l'instant, nous créerons seulement une variable qu'on appellera "PV" qui r
 
 Maintenant, que notre personnage se déplace occupons-nous des animations. (Pour ma part, le personnage avait déjà les animations pré fait)
 
-[Image de code Animation]
+![CodeDeplacementPersonnage](Images/CodePersonnageDeplacement.png)
 

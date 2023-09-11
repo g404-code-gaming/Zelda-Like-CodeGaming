@@ -31,3 +31,17 @@ Maintenant, que notre personnage se déplace occupons-nous des animations. (Pour
 
 ![CodeDeplacementPersonnage](Images/CodePersonageDeplacement.png)
 
+# Création du comportement d'attaque du personnage ⚔️
+
+Maintenant que notre personnage peut se déplacer dans le monde, il est temps de lui donner la possibilité de se défendre contre les monstres. Pour cela, nous allons créer un comportement d'attaque pour notre personnage.
+
+## Comportement et variables 📝
+
+Le comportement d'attaque de notre personnage sera déclenché lorsque le bouton d'attaque est pressé. Lorsque cela se produit, notre personnage va créer une épée et l'agiter dans la direction dans laquelle il fait face. Pour contrôler ce comportement, nous allons définir la variable suivante sur notre  :
+
+Cooldown : Cette variable contrôle le temps entre chaque attaque. Après chaque attaque, notre personnage doit attendre un certain temps avant de pouvoir attaquer à nouveau.
+
+## Code
+
+
+

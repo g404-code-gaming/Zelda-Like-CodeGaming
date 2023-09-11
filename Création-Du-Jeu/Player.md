@@ -29,5 +29,5 @@ Pour l'instant, nous créerons seulement une variable qu'on appellera "PV" qui r
 
 Maintenant, que notre personnage se déplace occupons-nous des animations. (Pour ma part, le personnage avait déjà les animations pré fait)
 
-![CodeDeplacementPersonnage](Images/CodePersonnageDeplacement.png)
+![CodeDeplacementPersonnage](Images/CodePersonageDeplacement.png)
 

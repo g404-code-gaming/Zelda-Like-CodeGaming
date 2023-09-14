@@ -3,7 +3,9 @@
 Maintenant que nous avons notre personnage et notre carte, il est temps d'ajouter des ennemis pour rendre notre jeu plus intéressant. Dans ce tutoriel, nous allons créer 4 types d'ennemis : BigDemon, RockHead, Necromancer et AngryPig.
 
 ## BigDemon 👹
+
 ![BigDemon](Images/BigDemon.png)
+
 BigDemon est un ennemi qui change de direction lorsqu'il heurte un mur. Cela signifie que si BigDemon se déplace vers le haut et heurte un mur, il commencera à se déplacer vers le bas. Cela permet à BigDemon de se déplacer de manière imprévisible, ce qui le rend plus difficile à éviter pour le joueur.
 
 ## Variable
@@ -52,20 +54,41 @@ Ensuite, le code vérifie si l'épée du joueur (SteelRapier24) est en collision
 
 Si toutes ces conditions sont remplies, cela signifie que le joueur a réussi à attaquer RockHead. Le code réduit alors la vie de RockHead de 1 (ce qui représente les dégâts de l'attaque du joueur) et marque RockHead comme ayant été touché (la variable Hit devient True).
 
-Et enfin lorsque RockHead n'a plus de Life on supprime l'objet.
+Et enfin lorsque RockHead n'a plus de vie on supprime l'objet.
 
 Voici le résultat que vous devriez obtenir.
 
 ![RockHeadCode](Images/CodeRockHead.png)
 
 ## Necromancien 💀
+
 Necromancien est un ennemi qui tire un laser sur le joueur lorsqu'il est en charge. Cela signifie que lorsque Necromancer est en charge, il se déplace vers une position spécifique et tire un laser en direction du joueur. Cela rend Necromancer dangereux à distance, car il peut attaquer le joueur même s'il est loin de lui.
+
+![Necromancien](Images/Necromancien.png)
 
 ## Variables
 
 Charge : Un booléen qui indique si Necromancer est en train de charger son attaque.
-Cooldown
+Cooldown : Un Booléen qui permettra d'éviter les spam d'attaque.
+
+![NecromancienVariable](Images/VariableNecromancien.png)
+
+## Comportement
+
+On vas devoir lui rajouter un comportement de PathFinding c'est-à-dire que notre nécromancien vas chercher à rejoindre un endroit par n'importe quel chemin. 
+
+![NecromancienComportement](Images/ComportementNecromancien.png)
+
+
+## Code
+
+Le Necromancer est un ennemi qui a la capacité de tirer un laser sur le joueur. Pour cela, il utilise une variable Charge qui indique s'il est en train de charger son attaque et une variable Cooldown qui représente le temps restant avant qu'il puisse à nouveau tirer son laser.
+
+Le code vérifie si la variable Charge est True, ce qui signifie que le Necromancer est en train de charger son attaque. Si c'est le cas, le Necromancer définit sa destination de déplacement (Pathfinding) vers la position du joueur (Soldier), moins 20 pixels en X et Y. Cela fait en sorte que le Necromancer se déplace vers le joueur pour tirer son laser.
+
+![NecromancienCode](Images/CodeNecromancien.png)
 
 ## AngryPig 🐷
+
 AngryPig est un ennemi qui charge le joueur lorsqu'il est en colère. Cela signifie que lorsque AngryPig est en colère, sa vitesse de déplacement augmente et il se dirige directement vers le joueur. Cela rend AngryPig plus dangereux lorsque le joueur l'attaque, car il peut rapidement se rapprocher du joueur et l'attaquer.
 

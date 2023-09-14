@@ -100,12 +100,12 @@ Direction : La direction actuelle d'AngryPig.
 Life : Le nombre de points de vie restants d'AngryPig.
 Moved : Un booléen qui indique si AngryPig a déjà changé de direction lors de la collision actuelle.
 
-![AngryPigVariable](Images/VariableAngryPig.png)
+![AngryPigVariable](Images/AngryPigVariable.png)
 
 ## Comportement 
 Comme pour le nécromancien on vas lui rajouter un comportement de PathFinding pour pouvoir chasser notre joueur lorsqu'il sera touché par l'épée.
 
-![AngryPigComportement](Images/ComportementAngryPig.png)
+![AngryPigComportement](Images/AngryPigComportement.png)
 
 ## Code
 Pour la partie code de notre AngryPig on vas le découpé en plusieur partie qui sont :
@@ -117,18 +117,19 @@ Pour la partie code de notre AngryPig on vas le découpé en plusieur partie qui
 ### les déplacement de base (hors colère)
 Pour ma part, j'ai choisi de leur faire ce déplacé comme les BigDemon sauf qu'ils iront que de haut en bas.
 
-![AngryPigCodeDéplacement](Images/CodeDeplacementAngryPig.png)
+![AngryPigCodeDéplacement](Images/AngryPigCodeDéplacement.png)
 
 ### Phase de combat (avec la colère)
 Lorsque l'AngryPig rentrera en état de colère (frappée par l'épée) il changera totalement de style de déplacement tout d'abord, il s'arrêtera de bouger le temps de l'animation "Hit" puis ensuite ces déplacements seront focalisé sur le joueur, c'est-à-dire, il donnera tout pour vous toucher. Puis après un certain temps, on le fera se calmer et retourner à son état normal de Pig inoffensif.
 
-![AngryPigCodeFight](Images/CodeFightAngryPig.png)
+![AngryPigCodeFight](Images/AngryPigCodeFight.png)
 
 ### la mort du AngryPig
 Pour sa mort rien de plus simple on supprimera le AngryPig et pour récompenser le player on lui donneras un rubis
 
-![AngryPigCodeDie](Images/CodeDieAngryPig.png)
+![AngryPigCodeDie](Images/AngryPigCodeDie.png)
 
+# Conclusion
 
 Les ennemis dans ton jeu, comme AngryPig, BigDemon, RockHead et Necromancer, ont tous des comportements uniques qui les rendent intéressants et stimulants pour le joueur. Ils ont tous des variables qui déterminent leur comportement, comme leur direction de déplacement, leur état d'humeur, leur vie et leur capacité à infliger des dégâts. Le code de chaque ennemi est conçu pour gérer ces variables et déterminer comment l'ennemi réagit aux actions du joueur, comme être touché par l'épée du joueur ou rencontrer un mur. En comprenant comment ces variables et ce code fonctionnent, tu peux créer des ennemis qui offrent un défi intéressant et varié pour le joueur.
 

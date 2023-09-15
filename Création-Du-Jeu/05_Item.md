@@ -32,25 +32,25 @@ En utilisant SnowPineTree de cette manière, nous pouvons gérer efficacement le
 
 En somme, les objets de type "conteneur de valeurs" sont un outil précieux pour tout développeur de jeux. Ils permettent de gérer efficacement des informations complexes et de garder le code du jeu propre et organisé.
 
-![ConteneurVariable](Images/ConteneurVariable)
+![ConteneurVariable](Images/ConteneurVariable.png)
 
 ## Étape 1 : Gérer la collision entre l'épée et l'herbe
 
 Dans cette étape, nous vérifions si l'épée du joueur est en collision avec de l'herbe. Si c'est le cas et que le joueur n'a pas encore la clé, alors nous enregistrons la position de l'herbe dans les variables KillPosX et KillPosY de l'objet SnowPineTree (notre conteneur à variables), nous jouons un son pour indiquer que l'herbe a été coupée, nous supprimons l'herbe, et nous générons un nombre aléatoire entre 0 et 14 que nous stockons dans la variable Random de l'objet SnowPineTree.
 
-![CollisionHerbeCode](Images/CollisionHerbeCode)
+![CollisionHerbeCode](Images/CollisionHerbeCode.png)
 
 ## Étape 2 : Gérer le drop d'items
 
 Dans cette étape, nous vérifions si la variable Random de l'objet SnowPineTree est égale à 0. Si c'est le cas, alors nous créons un objet Rupee à la position où l'herbe a été coupée, et nous réinitialisons la variable Random à -1 pour indiquer qu'un item a été drop. On répeteras ceci pour chaque item que l'on voudras placer.
 
-![SpawnerItemCode](Images/SpawnerItemCode)
+![SpawnerItemCode](Images/SpawnerItemCode.png)
 
 ## Étape 3 : Gérer la collecte d'items
 
 Dans cette étape, nous vérifions si le joueur est en collision avec un objet. Si c'est le cas, alors nous supprimons l'objet, nous changeons la variable attaché a cet objet.
 
-![ColectItemCode](Images/ColectItemCode)
+![ColectItemCode](Images/ColectItemCode.png)
 
 Dans les prochaines étapes de développement, nous allons explorer différentes idées pour les aléas de map et voir comment nous pouvons les intégrer dans notre jeu afin de le rendre plus vivant et intéressant.
 

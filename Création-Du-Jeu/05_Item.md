@@ -54,7 +54,8 @@ Dans cette étape, nous vérifions si le joueur est en collision avec un objet. 
 
 
 # La porte 🚪
-Avant de codé la porte Dupliquer votre scène de jeux afin de ne pas devoir tout recommencer de 0 et renomée la "donjon".
+
+Avant de codé la porte dupliquer votre scène de jeux afin de ne pas devoir tout recommencer de 0 et renommée la "donjon".
 
 ![DupliquerScène](Images/DupliquerScene.png)
 

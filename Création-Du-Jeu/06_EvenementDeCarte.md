@@ -5,15 +5,15 @@ Dans notre jeu, nous allons inclure un bouton que le joueur peut activer pour cr
 Pour cela, on va récupérer un objet qui représentera un trou suite à cela, on lui créera une nouvelle animation puis on modifiera les masques de collision afin de préparer à arriver de notre pont.
 Pour la première animation, on créera une box de collision qui rempliera le troue (il se peut que la collision soit déjà réalisée de base lorsque vous avez importé l'objet.). N'oubliez pas de décocher la case qui modifie la collision de toutes les animations.
 
-![BoxCollision1](Images/BoxCollision1)
+![BoxCollision1](Images/BoxCollision1.png)
 
 Pour la deuxième animation essayer de séparer les collisions afin de faire un passage pour que notre personnage puisse passer. Placer le pont à l'endroit prévue a cette effet (entre les boxs de collision) et placer le en dessous du troue (Pour cela changer l'ordre Z de l'objet).
 
-![BoxCollision2](Images/BoxCollision2)
+![BoxCollision2](Images/BoxCollision2.png)
 
 Pour mettre en place ce système, nous allons ensuite créer un objet pour le bouton. Lui créer une variable. Lorsque le joueur interagit avec ce bouton (par exemple, en entrant en collision avec le bouton), nous allons changer l'état du bouton pour indiquer qu'il a été activé et nous allons créer un pont à un endroit spécifique sur la carte.
 
-![CodeButton](Images/CodeButton)
+![CodeButton](Images/CodeButton.png)
 
 # Partie 2 : Le bateau qui tire sur le joueur 🚤
 
@@ -27,7 +27,7 @@ Pour mettre en place ce système, nous allons d'abord créer un objet pour le ba
 
 Nous allons ensuite programmer le bateau pour qu'il tire des projectiles à intervalles réguliers.
 
-![CodeShip](Images/CodeShip.png)
+![CodeShip](Images/ShipCode.png)
 
 Cela ajoute un élément de défi au jeu, car le joueur doit éviter les projectiles tout en essayant de naviguer sur la carte. 🎯
 

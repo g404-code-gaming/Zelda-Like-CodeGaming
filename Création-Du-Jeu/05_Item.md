@@ -52,5 +52,16 @@ Dans cette étape, nous vérifions si le joueur est en collision avec un objet. 
 
 ![ColectItemCode](Images/ColectItemCode.png)
 
-Dans les prochaines étapes de développement, nous allons explorer différentes idées pour les aléas de map et voir comment nous pouvons les intégrer dans notre jeu afin de le rendre plus vivant et intéressant.
 
+# La porte 🚪
+Avant de codé la porte Dupliquer votre scène de jeux afin de ne pas devoir tout recommencer de 0 et renomée la "donjon".
+
+![DupliquerScène](Images/DupliquerScene.png)
+
+Dans cette étape, nous vérifions si le joueur est en collision avec une porte et si le joueur a la clé. Si c'est le cas, alors nous enregistrons les valeurs actuelles des points de vie du joueur et du nombre de rubis dans des fichiers (ce qui pourrait être utilisé pour sauvegarder l'état du jeu), et nous changeons la scène pour aller au donjon.
+
+![CodeDoor](Images/CodeDoor.png)
+
+Félicitations à tous ! Nous avons maintenant un premier niveau avec un début et une fin. C'est une étape importante dans le développement de notre jeu. Vous avez fait du bon travail et je suis impatient de voir comment notre jeu va évoluer à partir de là. Alors, prêts pour le prochain défi ?
+
+Dans les prochaines étapes de développement, nous allons explorer différentes idées pour les aléas de map et voir comment nous pouvons les intégrer dans notre jeu afin de le rendre plus vivant et intéressant.

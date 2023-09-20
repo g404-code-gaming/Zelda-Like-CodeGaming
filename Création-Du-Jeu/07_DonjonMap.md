@@ -64,9 +64,9 @@ La première chose que nous allons faire pour notre porte payante est de créer 
 
 Ensuite, nous allons configurer la collision pour la porte. La porte fermée aura une collision et si le joueur a assez de rubis alors la porte sera ouverte donc sans collision.
 
-![DoorOpen](Images/DoorOpen.png)
+![DoorOpen](Images/OpenDoor.png)
 
-![DoorClosed](Images/DoorClosed.png)
+![DoorClosed](Images/ClosedDoor.png)
 
 ## Partie 2 : Les indications extérieures avec le PNJ et la bulle de dialogue 💬
 
@@ -80,7 +80,7 @@ Ces indications pourraient expliquer que la porte ne s'ouvre que si le joueur po
 
 Enfin, nous allons écrire le code qui gère toutes ces interactions. Ce code vérifiera si le joueur a assez de rubis pour ouvrir la porte, déduira le prix de la porte du total de rubis du joueur si c'est le cas, et jouera l'animation d'ouverture de la porte.
 
-![DoorCodeDonjon](Images/DoorCodeDonjon.png)
+![DoorCodeDonjon](Images/CodeDoorDonjon.png)
 
 # Escalier
 

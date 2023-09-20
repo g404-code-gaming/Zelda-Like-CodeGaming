@@ -35,8 +35,62 @@ Pour ce qui est de la map comme pour la scène d'avant libre à vous de réalise
 
 # Code 💻
 
-Pour le code, si vous avez correctement dupliqué la scène, il faudra supprimer tout ce qu'il ne nous intéresse pas ! On gardera :
+Pour le code, si vous avez correctement dupliqué la scène, il faudra supprimer tout ce qu'il ne nous intéresse pas ! On gardera alors :
 
+> Notre personnage 🏃‍♂️ : Le code pour le personnage du joueur, qui gère les mouvements, les interactions et les combats du personnage.
+>
+>BigDemon 👹 : Le code pour le BigDemon, qui est probablement un ennemi ou un boss dans le donjon. Ce code gère les mouvements, les attaques et la santé du 
+BigDemon.
+>
+>UI 🖥️ : Le code pour l'interface utilisateur (UI), qui affiche des informations importantes pour le joueur, comme la santé du personnage, le nombre de rubis collectés, etc.
 
+# Debut de scène
 
+Maintenant que nous avons préparé tous les éléments nécessaires pour notre donjon, il est temps de commencer à construire la scène du donjon. 🏰
+
+La première chose que nous allons faire est de modifier le code du début de la scène. Au lieu de commencer avec des valeurs par défaut, nous allons charger les valeurs de la scène précédente. Cela signifie que l'état du joueur (comme la santé, le nombre de rubis, etc.) sera conservé d'une scène à l'autre.
+
+Pour ce faire, nous allons utiliser les fichiers que nous avons créés précédemment pour enregistrer l'état du jeu. Lorsque la scène du donjon commence, nous allons lire ces fichiers et utiliser les valeurs qu'ils contiennent pour initialiser l'état du jeu.
+
+Cela permet une transition en douceur entre les scènes et donne au joueur le sentiment que son progrès est reconnu et conservé.
+
+![DebutDeSceneCode](Images/DebutDeSceneCode.png)
+
+# Porte a prix 🚪
+
+## Partie 1 : L'animation et la collision de la porte 🚪
+
+La première chose que nous allons faire pour notre porte payante est de créer une animation pour elle. Cette animation pourrait montrer une porte fermée et l'une ouverte lorsque le joueur a le nombre de rubis demandé.
+
+Ensuite, nous allons configurer la collision pour la porte. La porte fermée aura une collision et si le joueur a assez de rubis alors la porte sera ouverte donc sans collision.
+
+![DoorOpen](Images/DoorOpen.png)
+
+![DoorClosed](Images/DoorClosed.png)
+
+## Partie 2 : Les indications extérieures avec le PNJ et la bulle de dialogue 💬
+
+![PNJ](Images/PNJ.png)
+
+Pour aider le joueur à comprendre comment fonctionne la porte payante, nous allons placer un PNJ à proximité qui donnera des indications au joueur.
+
+Ces indications pourraient expliquer que la porte ne s'ouvre que si le joueur possède un certain nombre de rubis. Cela donne au joueur toutes les informations dont il a besoin pour utiliser la porte payante.
+
+## Partie 3 : Le code 💻
+
+Enfin, nous allons écrire le code qui gère toutes ces interactions. Ce code vérifiera si le joueur a assez de rubis pour ouvrir la porte, déduira le prix de la porte du total de rubis du joueur si c'est le cas, et jouera l'animation d'ouverture de la porte.
+
+![DoorCodeDonjon](Images/DoorCodeDonjon.png)
+
+# Escalier
+
+Dans notre donjon, nous allons inclure des escaliers qui serviront de moyen pour le joueur de retourner à la scène précédente. 🔄🏞️
+
+Ces escaliers sont particulièrement utiles si le joueur n'a pas assez de rubis pour ouvrir la porte payante du donjon. En utilisant ces escaliers, le joueur peut retourner à la scène précédente pour collecter plus de rubis. 💰
+
+Cela ajoute une dimension stratégique à notre jeu, car le joueur doit décider s'il vaut mieux avancer et affronter les défis du donjon avec les ressources qu'il a, ou s'il est préférable de retourner en arrière pour se préparer davantage.
+
+De plus, cela donne au joueur plus de liberté et de contrôle sur son expérience de jeu, car il peut choisir quand et comment progresser dans le jeu.
+
+![Escalier](Images/Escalier.png)
 

@@ -6,3 +6,5 @@ Un tas de choses ! Tu vas apprendre comment créer des personnages de jeu, comme
 
 Prêt à commencer ?
 Attrape ton clavier, prépare-toi à coder et allons-y jeune guerrier ! 💻
+
+[Preparation & Map](https://github.com/g404-code-gaming/Zelda-Like-CodeGaming/blob/main/Cr%C3%A9ation-Du-Jeu/01_Pr%C3%A9paration%26Map.md)

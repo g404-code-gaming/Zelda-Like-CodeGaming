@@ -46,3 +46,4 @@ Si tu as besoin d'inspiration, voici un exemple de carte que j'ai créée :
 
 N'hésite pas à utiliser cette carte comme point de départ pour ta propre création. Et n'oublie pas, le plus important est de t'amuser et de créer un monde de jeu qui te plaît !
 
+[Partie Player](https://github.com/g404-code-gaming/Zelda-Like-CodeGaming/blob/main/Cr%C3%A9ation-Du-Jeu/02_Player.md)

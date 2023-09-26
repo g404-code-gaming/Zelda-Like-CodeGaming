@@ -15,9 +15,9 @@ Voici une liste des comportements et des variables que nous allons définir pour
    
 # 1. Création du comportement de déplacement
 
-Notre personnage vas devoir hériter d'un comportement "TopDownMouvement" Mais tout d'abord ques qu'un top Down Mouvement?
+Notre personnage va devoir hériter d'un comportement "TopDownMouvement" Mais tout d'abord qu'es qu'un top Down Mouvement?
 
-un top-down movement est un type de mouvement dans les jeux vidéo qui se caractérise par une vue aérienne inclinée vers le bas, des contrôles permettant de déplacer le personnage ou l'objet dans toutes les directions, et une utilisation courante dans une variété de genres de jeux pour offrir une perspective stratégique et une meilleure visibilité.
+Un top-down mouvement est un type de mouvement dans les jeux vidéo qui se caractérise par une vue aérienne inclinée vers le bas, des contrôles permettant de déplacer le personnage ou l'objet dans toutes les directions, et une utilisation courante dans une variété de genres de jeux pour offrir une perspective stratégique et une meilleure visibilité.
 
 On aimerait que le personnage n'ait pas d'inertie. Pour cela, on va effectuer une forte accélération vers une vitesse maximum lorsque l'on déplace notre personnage et une forte décélération lorsqu'on relâchera une touche de déplacement.
 
@@ -39,7 +39,7 @@ Maintenant que notre personnage peut se déplacer dans le monde, il est temps de
 
 ## Comportement et variables 📝
 
-Le comportement d'attaque de notre personnage sera déclenché lorsque le bouton d'attaque est pressé. Lorsque cela se produit, notre personnage va créer une épée et l'agiter dans la direction dans laquelle il fait face. Pour contrôler ce comportement, nous allons définir la variable suivante sur notre  :
+Le comportement d'attaque de notre personnage sera déclenché lorsque le bouton d'attaque est pressé. Lorsque cela se produit, notre personnage va créer une épée et l'agiter dans la direction dans laquelle il fait face. Pour contrôler ce comportement, nous allons définir la variable suivante sur notre personnage :
 
 Cooldown : Cette variable contrôle le temps entre chaque attaque. Après chaque attaque, notre personnage doit attendre un certain temps avant de pouvoir attaquer à nouveau.
 CanHit : Cette variable pour ma part correspond a si l'épée a été ramasser ou non. (libre à vous de l'avoir dès le début du jeu ou le récupérer à un endroit)
@@ -54,11 +54,11 @@ Ensuite, le code vérifie la direction dans laquelle le personnage fait face. Se
 
 Après avoir créé l'épée, le personnage est mis en cooldown, ce qui signifie qu'il ne peut pas attaquer à nouveau immédiatement. Des timers sont utilisés pour contrôler le temps que l'épée reste à l'écran et le temps que le personnage reste en cooldown.
 
-Si le timer atteint 0.3 secondes, l'épée est supprimée de l'écran. Cela donne l'illusion que le personnage agite son épée.
+Si le timer atteint 0.3 seconde, l'épée est supprimée de l'écran. Cela donne l'illusion que le personnage agite son épée.
 
-Si le timer de cooldown atteint 0.7 secondes, le personnage est autorisé à attaquer à nouveau. Cela empêche le personnage d'attaquer en continu et donne un rythme aux combats.
+Si le timer de cooldown atteint 0.7 seconde, le personnage est autorisé à attaquer à nouveau. Cela empêche le personnage d'attaquer en continu et donne un rythme aux combats.
 
-voici le resultat que vous devriez atteindre :
+Voici le résultat que vous devriez atteindre :
 
 ![CodeAttaqueCharacter](Images/CodeAttaqueCharacterP1.png)
 ![CodeAttaqueCharacter](Images/CodeAttaqueCharacterP2.png)
@@ -72,7 +72,7 @@ Pour rendre notre monde de jeu plus réaliste, nous devons empêcher notre perso
 
 ## Création d'un groupe d'objets 📚
 
-La première étape consiste à créer un groupe d'objets qui regroupe tous les objets sur lesquels nous ne voulons pas que le personnage se déplace. Cela peut inclure des objets comme les murs, les arbres, les rochers, etc. Nous allons appeler ce groupe "Collidables".
+La première étape consiste à créer un groupe d'objets qui regroupe tous les objets sur lesquels nous ne voulons pas que le personnage se déplace. Cela peut inclure des objets comme les murs, les arbres, les rochers, etc. Nous allons appeler ce groupe "Collision".
 
 Pour créer un groupe d'objets dans GDevelop 5, tu peux suivre ces étapes :
 
@@ -83,7 +83,7 @@ Ajoute tous les objets sur lesquels tu ne veux pas que le personnage se déplace
 
 ## Code 🖥️
 
-Une fois que nous avons notre groupe d'objets, nous pouvons écrire le code qui gère les collisions. Ce code sera exécuté à chaque frame du jeu pour vérifier si le personnage est en collision avec un objet du groupe "Collidables". Si c'est le cas, le personnage sera empêché de se déplacer sur cet objet.
+Une fois que nous avons notre groupe d'objets, nous pouvons écrire le code qui gère les collisions. Ce code sera exécuté à chaque frame du jeu pour vérifier si le personnage est en collision avec un objet du groupe "Collision". Si c'est le cas, le personnage sera empêché de se déplacer sur cet objet.
 
 Voici à quoi pourrait ressembler ce code :
 
@@ -93,6 +93,6 @@ Avec ce code, notre personnage ne pourra pas se déplacer sur les objets du grou
 
 
 
-Dans la prochaine section, nous allons ajouter des monstres à notre monde de jeu et leur donner un comportement d'attaque. Alors prenez votre épée jeune guerrier!!
+Dans la prochaine section, nous allons ajouter des monstres à notre monde de jeu et leur donner un comportement d'attaque. Alors prenez votre épée jeune guerrier !!
 
 [Ennemis](https://github.com/g404-code-gaming/Zelda-Like-CodeGaming/blob/main/Cr%C3%A9ation-Du-Jeu/03_Ennemis.md)

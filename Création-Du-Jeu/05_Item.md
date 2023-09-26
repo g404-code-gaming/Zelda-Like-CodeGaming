@@ -42,7 +42,7 @@ Dans cette étape, nous vérifions si l'épée du joueur est en collision avec d
 
 ## Étape 2 : Gérer le drop d'items
 
-Dans cette étape, nous vérifions si la variable Random de l'objet SnowPineTree est égale à 0. Si c'est le cas, alors nous créons un objet Rupee à la position où l'herbe a été coupée, et nous réinitialisons la variable Random à -1 pour indiquer qu'un item a été drop. On répeteras ceci pour chaque item que l'on voudras placer.
+Dans cette étape, nous vérifions si la variable Random de l'objet SnowPineTree est égale à 0. Si c'est le cas, alors nous créons un objet Rupee à la position où l'herbe a été coupée, et nous réinitialisons la variable Random à -1 pour indiquer qu'un item a été drop. On répetera ceci pour chaque item que l'on voudra placer.
 
 ![SpawnerItemCode](Images/SpawnerItemCode.png)
 

@@ -42,7 +42,7 @@ Pour le code, si vous avez correctement dupliqué la scène, il faudra supprimer
 >BigDemon 👹 : Le code pour le BigDemon, qui est probablement un ennemi ou un boss dans le donjon. Ce code gère les mouvements, les attaques et la santé du 
 BigDemon.
 >
->UI 🖥️ : Le code pour l'interface utilisateur (UI), qui affiche des informations importantes pour le joueur, comme la santé du personnage, le nombre de rubis collectés, etc.
+>UI 🖥️ : Le code pour l'interface utilisateur (UI), qui affiche des informations importantes pour le joueur, comme la santé du personnage, le nombre de rubis collecté, etc.
 
 # Debut de scène
 

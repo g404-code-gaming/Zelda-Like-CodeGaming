@@ -7,7 +7,7 @@ Pour la première animation, on créera une box de collision qui rempliera le tr
 
 ![BoxCollision1](Images/BoxCollision1.png)
 
-Pour la deuxième animation essayer de séparer les collisions afin de faire un passage pour que notre personnage puisse passer. Placer le pont à l'endroit prévue a cette effet (entre les boxs de collision) et placer le en dessous du troue (Pour cela changer l'ordre Z de l'objet).
+Pour la deuxième animation essayer de séparer les collisions afin de faire un passage pour que notre personnage puisse passer. Placer le pont à l'endroit prévu à cet effet (entre les boxs de collision) et placer le en dessous du trou (Pour cela changer l'ordre Z de l'objet).
 
 ![BoxCollision2](Images/BoxCollision2.png)
 
@@ -21,7 +21,7 @@ Pour mettre en place ce système, nous allons ensuite créer un objet pour le bo
 
 En plus du bouton du pont, nous allons également inclure un bateau qui tire sur le joueur. Ce bateau pourrait être situé sur une rivière ou un lac, et il tirerait des projectiles sur le joueur à intervalles réguliers.
 
-Pour mettre en place ce système, nous allons d'abord créer un objet pour le bateau.Ensuite on vas crée des variables de scène.
+Pour mettre en place ce système, nous allons d'abord créer un objet pour le bateau. Ensuite on va créer des variables de scène.
 
 ![VariableScène](Images/VariableScene.png)
 

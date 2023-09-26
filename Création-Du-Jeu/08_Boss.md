@@ -57,7 +57,7 @@ Dans notre jeu, le boss a plusieurs phases, chacune correspondant à un certain 
 ![GestionBossCode](Images/GestionBossCode.png)
 
 ### Partie 8 : Attaques spéciales du boss 💥
-Pour rendre le combat contre le boss plus intéressant et plus difficile, nous allons programmer le boss pour qu'il utilise des attaques spéciales en plus de sont attaque de base. Ces attaques spéciales peuvent être des lasers ou d'autres types de projectiles qui sont tirés en direction du joueur. Celle-ci sera définie par une variable "Patern" que nous avions définit plus haut.
+Pour rendre le combat contre le boss plus intéressant et plus difficile, nous allons programmer le boss pour qu'il utilise des attaques spéciales en plus de son attaque de base. Ces attaques spéciales peuvent être des lasers ou d'autres types de projectiles qui sont tirés en direction du joueur. Celle-ci sera définie par une variable "Patern" que nous avions définit plus haut.
 
 ![PaternBossCode](Images/PaternBossCode.png)
 
@@ -65,7 +65,7 @@ Attaque de base : Un projectile rapide tiré en direction du joueur.
 
 ![AttaquePrincipalBossCode](Images/AttaquePrincipalBossCode.png)
 
-Attaque Spécial : une boule qui tourne sur elle même et tire des projectile qui suivront la rotation de la boule en spirale.
+Attaque Spécial : une boule qui tourne sur elle-même et tire des projectiles qui suivront la rotation de la boule en spirale.
 
 ![AttaqueSpeBossCode](Images/AttaqueSpeBossCode.png)
 

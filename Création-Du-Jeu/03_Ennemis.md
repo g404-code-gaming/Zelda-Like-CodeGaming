@@ -19,7 +19,7 @@ Tout d'abord, nous allons nous occuper de ces déplacements, on aimerait que l'e
 
 ![DeplacementBigDemon](Images/DeplacementBigDemon.png)
 
-Ensuite nous allons gérer les événement telle que la collision avec l'épée pour tué l'ennemie et si l'ennemie nous touche.
+Ensuite nous allons gérer les événements tels que la collision avec l'épée pour tué l'ennemie et si l'ennemie nous touche.
 
 Tout d'abord, commençons par le plus simple, c'est-à-dire si l'épée est en contact avec notre ennemie, on va tout simplement supprimer notre ennemie. Rien de plus simple !!
 
@@ -62,29 +62,29 @@ Voici le résultat que vous devriez obtenir.
 
 ## Necromancien 💀
 
-Necromancien est un ennemi qui tire un laser sur le joueur lorsqu'il est en charge. Cela signifie que lorsque Necromancer est en charge, il se déplace vers une position spécifique et tire un laser en direction du joueur. Cela rend Necromancer dangereux à distance, car il peut attaquer le joueur même s'il est loin de lui.
+Necromancien est un ennemi qui tire un laser sur le joueur lorsqu'il est en charge. Cela signifie que lorsque Necromancien est en charge, il se déplace vers une position spécifique et tire un laser en direction du joueur. Cela rend Necromancien dangereux à distance, car il peut attaquer le joueur même s'il est loin de lui.
 
 ![Necromancien](Images/Necromancien.png)
 
 ## Variables
 
-Charge : Un booléen qui indique si Necromancer est en train de charger son attaque.
-Cooldown : Un Booléen qui permettra d'éviter les spam d'attaque.
+Charge : Un booléen qui indique si Necromancien est en train de charger son attaque.
+Cooldown : Un booléen qui permettra d'éviter les spams d'attaque.
 
 ![NecromancienVariable](Images/VariableNecromancien.png)
 
 ## Comportement
 
-On vas devoir lui rajouter un comportement de PathFinding c'est-à-dire que notre nécromancien vas chercher à rejoindre un endroit par n'importe quel chemin. 
+On va devoir lui rajouter un comportement de PathFinding c'est-à-dire que notre nécromancien vas chercher à rejoindre un endroit par n'importe quel chemin. 
 
 ![NecromancienComportement](Images/ComportementNecromancien.png)
 
 
 ## Code
 
-Le Necromancer est un ennemi qui a la capacité de tirer un laser sur le joueur. Pour cela, il utilise une variable Charge qui indique s'il est en train de charger son attaque et une variable Cooldown qui représente le temps restant avant qu'il puisse à nouveau tirer son laser.
+Le Necromancien est un ennemi qui a la capacité de tirer un laser sur le joueur. Pour cela, il utilise une variable Charge qui indique s'il est en train de charger son attaque et une variable Cooldown qui représente le temps restant avant qu'il ne puisse à nouveau tirer son laser.
 
-Le code vérifie si la variable Charge est True, ce qui signifie que le Necromancer est en train de charger son attaque. Si c'est le cas, le Necromancer définit sa destination de déplacement (Pathfinding) vers la position du joueur (Soldier), moins 20 pixels en X et Y. Cela fait en sorte que le Necromancer se déplace vers le joueur pour tirer son laser.
+Le code vérifie si la variable Charge est True, ce qui signifie que le Necromancien est en train de charger son attaque. Si c'est le cas, le Necromancien définit sa destination de déplacement (Pathfinding) vers la position du joueur (Soldier), moins 20 pixels en X et Y. Cela fait en sorte que le Necromancien se déplace vers le joueur pour tirer son laser.
 
 ![NecromancienCode](Images/CodeNecromancien.png)
 
@@ -103,16 +103,16 @@ Moved : Un booléen qui indique si AngryPig a déjà changé de direction lors d
 ![AngryPigVariable](Images/AngryPigVariable.png)
 
 ## Comportement 
-Comme pour le nécromancien on vas lui rajouter un comportement de PathFinding pour pouvoir chasser notre joueur lorsqu'il sera touché par l'épée.
+Comme pour le nécromancien on va lui rajouter un comportement de PathFinding pour pouvoir chasser notre joueur lorsqu'il sera touché par l'épée.
 
 ![AngryPigComportement](Images/AngryPigComportement.png)
 
 ## Code
-Pour la partie code de notre AngryPig on vas le découpé en plusieur partie qui sont :
+Pour la partie code de notre AngryPig on va le découpé en plusieur partie qui sont :
 
-1. les déplacement de base (hors colère)
+1. Les déplacements de base (hors colère)
 2. Phase de combat (avec la colère)
-3. la mort du AngryPig
+3. La mort du AngryPig
 
 ### les déplacement de base (hors colère)
 Pour ma part, j'ai choisi de leur faire ce déplacé comme les BigDemon sauf qu'ils iront que de haut en bas.
@@ -124,8 +124,8 @@ Lorsque l'AngryPig rentrera en état de colère (frappée par l'épée) il chang
 
 ![AngryPigCodeFight](Images/AngryPigCodeFight.png)
 
-### la mort du AngryPig
-Pour sa mort rien de plus simple on supprimera le AngryPig et pour récompenser le player on lui donneras un rubis
+### La mort du AngryPig
+Pour sa mort rien de plus simple on supprimera le AngryPig et pour récompenser le player on lui donnera un rubis
 
 ![AngryPigCodeDie](Images/AngryPigCodeDie.png)
 

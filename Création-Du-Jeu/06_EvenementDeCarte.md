@@ -3,7 +3,7 @@
 Dans notre jeu, nous allons inclure un bouton que le joueur peut activer pour créer un pont. Ce pont peut être utilisé pour traverser une rivière ou un ravin, ou pour accéder à une zone autrement inaccessible.
 
 Pour cela, on va récupérer un objet qui représentera un trou suite à cela, on lui créera une nouvelle animation puis on modifiera les masques de collision afin de préparer à arriver de notre pont.
-Pour la première animation, on créera une box de collision qui rempliera le troue (il se peut que la collision soit déjà réalisée de base lorsque vous avez importé l'objet.). N'oubliez pas de décocher la case qui modifie la collision de toutes les animations.
+Pour la première animation, on créera une box de collision qui rempliera le trou (il se peut que la collision soit déjà réalisée de base lorsque vous avez importé l'objet.). N'oubliez pas de décocher la case qui modifie la collision de toutes les animations.
 
 ![BoxCollision1](Images/BoxCollision1.png)
 

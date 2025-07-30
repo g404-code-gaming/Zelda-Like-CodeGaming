@@ -41,8 +41,9 @@ Maintenant que notre personnage peut se déplacer dans le monde, il est temps de
 
 Le comportement d'attaque de notre personnage sera déclenché lorsque le bouton d'attaque est pressé. Lorsque cela se produit, notre personnage va créer une épée et l'agiter dans la direction dans laquelle il fait face. Pour contrôler ce comportement, nous allons définir la variable suivante sur notre personnage :
 
-Cooldown : Cette variable contrôle le temps entre chaque attaque. Après chaque attaque, notre personnage doit attendre un certain temps avant de pouvoir attaquer à nouveau.
-CanHit : Cette variable pour ma part correspond a si l'épée a été ramasser ou non. (libre à vous de l'avoir dès le début du jeu ou le récupérer à un endroit)
+**Cooldown** : Cette variable contrôle le temps entre chaque attaque. Après chaque attaque, notre personnage doit attendre un certain temps avant de pouvoir attaquer à nouveau.
+
+**CanHit** : Cette variable pour ma part correspond a si l'épée a été ramassée ou non. (libre à vous de l'avoir dès le début du jeu ou le récupérer à un endroit)
 
 ![StartVariableCharacter](Images/StartVariableCharacter.png)
 

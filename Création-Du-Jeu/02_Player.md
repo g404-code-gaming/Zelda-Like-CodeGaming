@@ -15,7 +15,7 @@ Voici une liste des comportements et des variables que nous allons définir pour
    
 # 1. Création du comportement de déplacement
 
-Notre personnage va devoir hériter d'un comportement "TopDownMouvement" Mais tout d'abord qu'es qu'un top Down Mouvement?
+Notre personnage va devoir hériter d'un comportement "TopDownMouvement" Mais tout d'abord qu'est-ce qu'un top Down Mouvement?
 
 Un top-down mouvement est un type de mouvement dans les jeux vidéo qui se caractérise par une vue aérienne inclinée vers le bas, des contrôles permettant de déplacer le personnage ou l'objet dans toutes les directions, et une utilisation courante dans une variété de genres de jeux pour offrir une perspective stratégique et une meilleure visibilité.
 

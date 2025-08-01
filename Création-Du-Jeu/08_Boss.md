@@ -22,17 +22,17 @@ Gun : Variable qui correspond au boss "GunMan".
 ### Partie 3 : Variables du boss 📊
 Avant de créer le boss, nous devons définir certaines variables qui détermineront son comportement. Ces variables peuvent inclure la santé du boss, type de ses attaques, etc. En ajustant ces variables, nous pouvons contrôler la difficulté du combat contre le boss.
 
-Direction : Cette variable détermine si le boss se déplace vers la gauche ou la droite. En changeant cette variable, nous pouvons faire changer de direction au boss.
+**Direction** : Cette variable détermine si le boss se déplace vers la gauche ou la droite. En changeant cette variable, nous pouvons faire changer de direction au boss.
 
-Moved : Cette variable indique si le boss est en mouvement ou non. Si "Moved" est vrai, le boss se déplace. Si "Moved" est faux, le boss reste immobile.
+**Moved** : Cette variable indique si le boss est en mouvement ou non. Si "Moved" est vrai, le boss se déplace. Si "Moved" est faux, le boss reste immobile.
 
-Shoot : Cette variable indique si le boss est en train de tirer ou non. Si "Shoot" est vrai, le boss tire des projectiles. Si "Shoot" est faux, le boss ne tire pas.
+**Shoot** : Cette variable indique si le boss est en train de tirer ou non. Si "Shoot" est vrai, le boss tire des projectiles. Si "Shoot" est faux, le boss ne tire pas.
 
-Spécial : Cette variable indique si le boss utilise son attaque spéciale ou non. Si "Spécial" est vrai, le boss utilise son attaque spéciale. Si "Spécial" est faux, le boss utilise son attaque normale.
+**Spécial** : Cette variable indique si le boss utilise son attaque spéciale ou non. Si "Spécial" est vrai, le boss utilise son attaque spéciale. Si "Spécial" est faux, le boss utilise son attaque normale.
 
-PV : Cette variable représente le nombre de points de vie du boss. Chaque fois que le boss est touché, nous déduisons un point de cette variable. Si "PV" atteint zéro, le boss meurt.
+**PV** : Cette variable représente le nombre de points de vie du boss. Chaque fois que le boss est touché, nous déduisons un point de cette variable. Si "PV" atteint zéro, le boss meurt.
 
-Pattern : Cette variable est un nombre aléatoire qui détermine si le boss utilise son attaque normale ou son attaque spéciale. En changeant cette variable, nous pouvons rendre le comportement du boss plus imprévisible et le combat plus intéressant.
+**Pattern** : Cette variable est un nombre aléatoire qui détermine si le boss utilise son attaque normale ou son attaque spéciale. En changeant cette variable, nous pouvons rendre le comportement du boss plus imprévisible et le combat plus intéressant.
 
 ![VariableBoss](Images/VariableBoss.png)
 

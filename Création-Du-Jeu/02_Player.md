@@ -1,6 +1,6 @@
 # Création du comportement du personnage 🏃‍♂️
 
-Maintenant que nous avons notre monde de jeu, il est temps de donner vie à notre personnage. La création du comportement du personnage se fera en deux grandes parties : la définition des comportements et des variables, et l'écriture du code avec son animation.
+Maintenant que nous avons notre monde, il est temps de donner vie à notre personnage. La création du comportement du personnage se fera en deux grandes parties : la définition des comportements et des variables, et l'écriture du code avec son animation.
 
 # Comportements et variables 📝
 
@@ -15,7 +15,7 @@ Voici une liste des comportements et des variables que nous allons définir pour
    
 # 1. Création du comportement de déplacement
 
-Notre personnage va devoir hériter d'un comportement "TopDownMouvement" Mais tout d'abord qu'est-ce qu'un top Down Mouvement?
+Notre personnage va devoir hériter d'un comportement "TopDownMouvement" Mais tout d'abord qu'est-ce qu'un top-Down Mouvement?
 
 Un top-down mouvement est un type de mouvement dans les jeux vidéo qui se caractérise par une vue aérienne inclinée vers le bas, des contrôles permettant de déplacer le personnage ou l'objet dans toutes les directions, et une utilisation courante dans une variété de genres de jeux pour offrir une perspective stratégique et une meilleure visibilité.
 
@@ -29,7 +29,7 @@ Pour l'instant, nous créerons seulement une variable qu'on appellera "PV" qui r
 
 # Animation du personnage 🏃‍♂️
 
-Maintenant, que notre personnage se déplace occupons-nous des animations. (Pour ma part, le personnage avait déjà les animations pré fait)
+Maintenant, que notre personnage se déplace occupons-nous des animations. (De préférence, prenez un personnage avec les animations )
 
 ![CodeDeplacementPersonnage](Images/CodePersonageDeplacement.png)
 
@@ -43,7 +43,7 @@ Le comportement d'attaque de notre personnage sera déclenché lorsque le bouton
 
 **Cooldown** : Cette variable contrôle le temps entre chaque attaque. Après chaque attaque, notre personnage doit attendre un certain temps avant de pouvoir attaquer à nouveau.
 
-**CanHit** : Cette variable pour ma part correspond a si l'épée a été ramassée ou non. (libre à vous de l'avoir dès le début du jeu ou le récupérer à un endroit)
+**CanHit** : Cette variable correspond a si l'épée a été ramassée ou non. (libre à vous de l'avoir dès le début du jeu ou le récupérer à un endroit)
 
 ![StartVariableCharacter](Images/StartVariableCharacter.png)
 

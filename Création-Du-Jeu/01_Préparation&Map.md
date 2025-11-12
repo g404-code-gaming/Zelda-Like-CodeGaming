@@ -1,6 +1,5 @@
 # Préparation des objets 📦
-
-Pour ce projet, nous aurons besoin de plusieurs objets pour construire notre monde de jeu. Voici la liste des objets requis au minimum:
+Pour ce projet, nous aurons besoin de plusieurs objets pour construire notre monde. Voici la liste des objets requis au minimum:
 
 > __Une île__ 🏝️ : C'est la base de notre terrain. Elle servira de plateforme pour notre personnage et les autres objets du jeu.
 > 
@@ -30,7 +29,7 @@ Pour ce projet, nous aurons besoin de plusieurs objets pour construire notre mon
 
 # Création de la carte 🗺️
 
-Maintenant que nous avons tous nos objets, il est temps de créer notre carte. C'est là que ta créativité entre en jeu ! Tu es libre de disposer les objets comme tu le souhaites pour créer ton propre monde de jeu. Tu peux créer une île tropicale, un donjon sombre, une forêt mystérieuse, ou tout ce que tu peux imaginer !
+Maintenant que nous avons tous nos objets, il est temps de créer notre carte. C'est là que ta créativité entre en jeu ! Tu es libre de disposer les objets comme tu le souhaites pour créer ton propre monde. Tu peux créer une île tropicale, un donjon sombre, une forêt mystérieuse, ou tout ce que tu peux imaginer !
 
 Voici quelques conseils pour t'aider à démarrer :
 
@@ -40,10 +39,10 @@ N'oublie pas d'ajouter des murs et des portes pour définir les limites de ton d
 Place ton personnage dans un endroit sûr où il pourra commencer son aventure.
 Enfin, ajoute des monstres, des rubis, des clés et des coffres à des endroits stratégiques pour créer des défis pour ton personnage.
 
-Si tu as besoin d'inspiration, voici un exemple de carte que j'ai créée :
+Si tu as besoin d'inspiration, voici un exemple de carte :
 
 ![Map](Images/Map.png)
 
-N'hésite pas à utiliser cette carte comme point de départ pour ta propre création. Et n'oublie pas, le plus important est de t'amuser et de créer un monde de jeu qui te plaît !
+N'hésite pas à utiliser cette carte comme point de départ pour ta propre création. Et n'oublie pas, le plus important est de t'amuser et de créer un monde qui te plaît !
 
 [Partie Player](https://github.com/g404-code-gaming/Zelda-Like-CodeGaming/blob/main/Cr%C3%A9ation-Du-Jeu/02_Player.md)

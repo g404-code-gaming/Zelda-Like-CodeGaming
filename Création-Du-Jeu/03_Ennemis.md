@@ -15,13 +15,13 @@ Moved : Un booléen qui indique si BigDemon a déjà changé de direction lors d
 ![VariableBigDemon](Images/VariableBigDemon.png)
 
 ## Code 
-Tout d'abord, nous allons nous occuper de ces déplacements, on aimerait que l'ennemie face seulement des mouvements de gauche à droite ou de haut en bas. Ceci sera notre ennemi le plus faible et basique pour donner une approche croissante dans la difficulté du jeu afin de ne pas décevoir les joueurs de mourir ou de tomber directement sur un ennemi compliqué à tué.
+Tout d'abord, nous allons nous occuper de ses déplacements, on aimerait que l'ennemi fasse seulement des mouvements de gauche à droite ou de haut en bas. BigDemon sera notre ennemi le plus faible et basique pour donner une approche croissante dans la difficulté du jeu afin de ne pas décevoir les joueurs de mourir ou de tomber directement sur un ennemi compliqué à tuer.
 
 ![DeplacementBigDemon](Images/DeplacementBigDemon.png)
 
-Ensuite nous allons gérer les événements tels que la collision avec l'épée pour tué l'ennemie et si l'ennemie nous touche.
+Ensuite nous allons gérer les événements tels que la collision avec l'épée pour tuer l'ennemi et s'il nous touche.
 
-Tout d'abord, commençons par le plus simple, c'est-à-dire si l'épée est en contact avec notre ennemie, on va tout simplement supprimer notre ennemie. Rien de plus simple !!
+Tout d'abord, commençons par le plus simple, c'est-à-dire si l'épée est en collision avec l'ennemi, on va tout simplement le supprimer. Rien de plus simple !!
 
 ![BigDemonDie](Images/DieBigDemon.png)
 
@@ -29,7 +29,7 @@ Par la suite, on va gérer la collision de notre ennemi avec notre personnage. A
 
 ![VariableDInvincibilité](Images/InvincibilitéCharacter.png)
 
-Puis maintenant retournons sur notre ennemie qui attend de pouvoir nous tuer. Lors d'une collision de notre personnage contre l'ennemie, on fera perdre 1 PV à notre personnage et nous fera passer en état d'invincibilité pendant un certain temps.
+Puis maintenant retournons sur notre ennemi qui attend de pouvoir nous eliminer. Lors d'une collision de notre personnage contre l'ennemi, on fera perdre 1 PV à notre personnage et nous fera passer en état d'invincibilité pendant un certain temps.
 
 ![BigDemonAttaque](Images/BigDemonAttaque.png)
 
@@ -108,19 +108,19 @@ Comme pour le nécromancien on va lui rajouter un comportement de PathFinding po
 ![AngryPigComportement](Images/AngryPigComportement.png)
 
 ## Code
-Pour la partie code de notre AngryPig on va le découpé en plusieur partie qui sont :
+Pour la partie code de notre AngryPig on va le découper en plusieurs parties qui sont :
 
 1. Les déplacements de base (hors colère)
 2. Phase de combat (avec la colère)
 3. La mort du AngryPig
 
 ### les déplacement de base (hors colère)
-Pour ma part, j'ai choisi de leur faire ce déplacé comme les BigDemon sauf qu'ils iront que de haut en bas.
+Pour ma part, j'ai choisi de les faire se déplacer comme les BigDemon sauf qu'ils iront que de haut en bas.
 
 ![AngryPigCodeDéplacement](Images/AngryPigCodeDéplacement.png)
 
 ### Phase de combat (avec la colère)
-Lorsque l'AngryPig rentrera en état de colère (frappée par l'épée) il changera totalement de style de déplacement tout d'abord, il s'arrêtera de bouger le temps de l'animation "Hit" puis ensuite ces déplacements seront focalisé sur le joueur, c'est-à-dire, il donnera tout pour vous toucher. Puis après un certain temps, on le fera se calmer et retourner à son état normal de Pig inoffensif.
+Lorsque l'AngryPig rentrera en état de colère (frappée par l'épée) il changera totalement de style de déplacement tout d'abord, il s'arrêtera de bouger le temps de l'animation "Hit" puis ensuite ses déplacements seront focalisés sur le joueur, c'est-à-dire, il donnera tout pour vous toucher. Puis après un certain temps, on le fera se calmer et retourner à son état normal de Pig inoffensif.
 
 ![AngryPigCodeFight](Images/AngryPigCodeFight.png)
 
@@ -131,7 +131,7 @@ Pour sa mort rien de plus simple on supprimera le AngryPig et pour récompenser 
 
 # Conclusion
 
-Les ennemis dans ton jeu, comme AngryPig, BigDemon, RockHead et Necromancer, ont tous des comportements uniques qui les rendent intéressants et stimulants pour le joueur. Ils ont tous des variables qui déterminent leur comportement, comme leur direction de déplacement, leur état d'humeur, leur vie et leur capacité à infliger des dégâts. Le code de chaque ennemi est conçu pour gérer ces variables et déterminer comment l'ennemi réagit aux actions du joueur, comme être touché par l'épée du joueur ou rencontrer un mur. En comprenant comment ces variables et ce code fonctionnent, tu peux créer des ennemis qui offrent un défi intéressant et varié pour le joueur.
+Les ennemis dans ton jeu, comme AngryPig, BigDemon, RockHead et Necromancer, ont tous des comportements uniques qui les rendent intéressants et stimulants pour le joueur. Ils ont tous des variables qui déterminent leurs comportements, comme leur direction de déplacement, leur état d'humeur, leur vie et leur capacité à infliger des dégâts. Le code de chaque ennemi est conçu pour gérer ces variables et déterminer comment l'ennemi réagit aux actions du joueur, comme être touché par l'épée du joueur ou rencontrer un mur. En comprenant comment ces variables et ce code fonctionnent, tu peux créer des ennemis qui offrent des défis intéressants et variés pour le joueur.
 
 Maintenant que nous avons examiné les ennemis, nous allons passer à l'interface utilisateur (UI). L'UI est un aspect crucial de tout jeu, car elle permet au joueur de comprendre ce qui se passe et de contrôler efficacement son personnage. Dans la prochaine section, nous allons examiner comment tu peux créer une UI efficace pour ton jeu.
 [Lien vers UI](https://github.com/g404-code-gaming/Zelda-Like-CodeGaming/blob/main/Cr%C3%A9ation-Du-Jeu/04_UI.md)

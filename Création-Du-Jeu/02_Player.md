@@ -5,7 +5,7 @@ Maintenant que nous avons notre monde, il est temps de donner vie à notre perso
 # Comportements et variables 📝
 
  ## Comportement
-Les comportements sont les actions que notre personnage peut effectuer, comme marcher, courir, sauter, attaquer, etc. Pour chaque comportement, nous devrons définir des variables qui contrôlent comment ce comportement fonctionne. Par exemple, pour le comportement de marche, nous pourrions avoir des variables pour la vitesse de marche, la direction de marche, etc.
+Les comportements sont les actions que notre personnage peut effectuer, comme marcher, courir, sauter, attaquer, etc. Pour chaque comportement, nous devrons définir des variables qui contrôlent son fonctionnement. Par exemple, pour le comportement de marche, nous pourrions avoir des variables pour la vitesse de marche, la direction de marche, etc.
 
 Voici une liste des comportements et des variables que nous allons définir pour notre personnage :
 
@@ -29,7 +29,7 @@ Pour l'instant, nous créerons seulement une variable qu'on appellera "PV" qui r
 
 # Animation du personnage 🏃‍♂️
 
-Maintenant, que notre personnage se déplace occupons-nous des animations. (De préférence, prenez un personnage avec les animations )
+Maintenant, que notre personnage se déplace occupons-nous des animations. (De préférence, prenez un personnage avec les animations incluses)
 
 ![CodeDeplacementPersonnage](Images/CodePersonageDeplacement.png)
 
@@ -43,7 +43,7 @@ Le comportement d'attaque de notre personnage sera déclenché lorsque le bouton
 
 **Cooldown** : Cette variable contrôle le temps entre chaque attaque. Après chaque attaque, notre personnage doit attendre un certain temps avant de pouvoir attaquer à nouveau.
 
-**CanHit** : Cette variable correspond a si l'épée a été ramassée ou non. (libre à vous de l'avoir dès le début du jeu ou le récupérer à un endroit)
+**CanHit** : Cette variable correspond a si l'épée a été ramassée ou non. (libre à vous de l'avoir dès le début du jeu ou de devoir aller la récupérer)
 
 ![StartVariableCharacter](Images/StartVariableCharacter.png)
 

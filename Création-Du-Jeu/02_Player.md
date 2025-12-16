@@ -59,6 +59,8 @@ Il faut également ajouter l'évènement de fin qui remet la variable Cooldown �
 
 Avec ce code, notre personnage peut maintenant attaquer les monstres et se défendre.
 
+Une fois que vos tests sont faits et que le programme fonctionne, modifier la variable CanHit de votre personnage : Mettez-là à Faux.
+
 ## 3. Gestion des collisions dans la carte 🚧
 
 Pour rendre notre monde de jeu plus réaliste, nous devons empêcher notre personnage de se déplacer n'importe où. Par exemple, notre personnage ne devrait pas pouvoir marcher sur l'eau ou traverser les murs. Pour cela, nous allons gérer les collisions dans notre carte.

@@ -1,6 +1,27 @@
 # Création d'ennemis 🧟‍♂️
 
-Maintenant que nous avons notre personnage et notre carte, il est temps d'ajouter des ennemis pour rendre notre jeu plus intéressant. Dans ce tutoriel, nous allons créer 4 types d'ennemis : BigDemon, RockHead, Necromancer et AngryPig.
+Maintenant que nous avons notre personnage et notre carte, il est temps d'ajouter des ennemis pour rendre notre jeu plus intéressant. Dans ce tutoriel, nous allons créer 3 types d'ennemis : BigDemon, RockHead, Necromancer.
+
+Pour les plus rapides d'entre vous, le Angrypig sera en exercice bonus.
+
+## Préparation des ennemis 
+
+Tout les ennemis ont des points communs : ils vont tous blesser le joueur en le touchant, et tous ont des points de vie qu'ils vont perdre lorsqu'ils subissent des coups d'épée.
+
+Créez le groupe **Ennemis**, dans lequel vous allez mettre tous vos ennemis.
+
+![groupe](Images/3_ennemi_groupe.JPG)
+
+Dans les variables de ce groupe, ajoutez les **PV**, comme ça, tout les objets qui appartiennent à ce groupe ont des PV.
+
+![Variable](Images/3_ennemi_PV.JPG)
+
+Une fois que cette variable est faite, allez dans les paramètres de chacun de vos ennemis et modifier la variable pour définir leurs PV. 
+
+Exemple : 
+
+|| test || 
+
 
 ## BigDemon 👹
 

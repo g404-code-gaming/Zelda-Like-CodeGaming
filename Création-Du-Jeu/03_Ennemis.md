@@ -6,6 +6,8 @@ Pour les plus rapides d'entre vous, le Angrypig sera en exercice bonus.
 
 ## Préparation des ennemis 
 
+### groupe et variables
+
 Tout les ennemis ont des points communs : ils vont tous blesser le joueur en le touchant, et tous ont des points de vie qu'ils vont perdre lorsqu'ils subissent des coups d'épée.
 
 Créez le groupe **Ennemis**, dans lequel vous allez mettre tous vos ennemis.
@@ -26,6 +28,18 @@ Exemple :
 | Rock Head | 3 | 
 | Necromancer | 4 |
 | Angry Pig | 6 | 
+
+### Tuer les ennemis
+
+Pour vaincre nos ennemis, nous allons avoir besoin de deux évènements : 
+  - Un premier qui vérifie lorsque l'ennemi est en contact avec l'épée du joueur. ça lui fait perdre un PV.
+  - Un deuxième qui vérifie si l'ennemi a 0 PV. Si oui, l'ennemi est supprimé.
+
+![Code PV](Images/3_ennemi_codePV.JPG)
+
+Tester ces évènements : placez des ennemis sur la scène et frappez-les avec votre épée pour vérifier si ils disparaissent au bout de quelques attaques.
+
+AAA
 
 ## BigDemon 👹
 

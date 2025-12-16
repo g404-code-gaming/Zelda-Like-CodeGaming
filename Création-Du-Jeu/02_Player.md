@@ -58,28 +58,31 @@ Il faut également ajouter l'évènement de fin qui remet la variable Cooldown �
 
 Avec ce code, notre personnage peut maintenant attaquer les monstres et se défendre.
 
-# 3. Gestion des collisions dans la carte 🚧
+## 3. Gestion des collisions dans la carte 🚧
 
 Pour rendre notre monde de jeu plus réaliste, nous devons empêcher notre personnage de se déplacer n'importe où. Par exemple, notre personnage ne devrait pas pouvoir marcher sur l'eau ou traverser les murs. Pour cela, nous allons gérer les collisions dans notre carte.
 
-## Création d'un groupe d'objets 📚
+### Création d'un groupe d'objets 📚
 
-La première étape consiste à créer un groupe d'objets qui regroupe tous les objets sur lesquels nous ne voulons pas que le personnage se déplace. Cela peut inclure des objets comme les murs, les arbres, les rochers, etc. Nous allons appeler ce groupe "Collision".
+La première étape consiste à créer un groupe d'objets qui regroupe tous les objets sur lesquels nous ne voulons pas que le personnage se déplace. Cela peut inclure des objets comme les murs, les arbres, les rochers, etc. Nous allons appeler ce groupe "Obstacle".
 
-Pour créer un groupe d'objets dans GDevelop 5, tu peux suivre ces étapes :
+![CodeAttaqueCharacter](Images/2_perso_obstacle.JPG)
 
-Ouvre le gestionnaire d'objets.
-Clique sur le bouton "+ Ajouter un groupe".
-Nomme le groupe "Collision".
-Ajoute tous les objets sur lesquels tu ne veux pas que le personnage se déplace à ce groupe.
+Ajoutez dans ce groupe tout les objets que le joueur ne peut pas traverser.
+
+### Collision 
+
+Afin de rendre notre jeu plus proche, nous allons modifier les collisions de chaque objet **Obstacle**
+
+Dans les propriétés de votre objet, cliquez sur **Modifier les masques de collisions** et personnalisé la collision de votre objet. 
+
+![CodeAttaqueCharacter](Images/2_perso_collision.JPG)
 
 ## Code 🖥️
 
-Une fois que nous avons notre groupe d'objets, nous pouvons écrire le code qui gère les collisions. Ce code sera exécuté à chaque frame du jeu pour vérifier si le personnage est en collision avec un objet du groupe "Collision". Si c'est le cas, le personnage sera empêché de se déplacer sur cet objet.
+Une fois que nous avons notre groupe d'objets, nous pouvons écrire le code qui gère les collisions. 
 
-Voici à quoi pourrait ressembler ce code :
-
-![Collision](Images/Collision.png)
+![Collision](Images/2_perso_collision_code.JPG)
 
 Avec ce code, notre personnage ne pourra pas se déplacer sur les objets du groupe "Collision", ce qui rendra notre monde de jeu plus réaliste et plus intéressant à explorer.
 

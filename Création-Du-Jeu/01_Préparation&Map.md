@@ -17,13 +17,13 @@ Il est conseillé d'utiliser les monstres suivant : *Rock Head* ; *BigDemon* ; *
 > 
 > __Un objet pour représenter nos PV__ ❤️ : Cet objet servira d'indicateur de la santé de notre héros.
 > 
-> __Un rubis__ 💎 : C'est la monnaie de notre jeu. Notre héros pourra collecter des rubis en explorant le monde et en combattant les monstres.
+> __Une pièce d'or 💎 : C'est la monnaie de notre jeu. Notre héros pourra collecter des pièces en explorant le monde et en combattant les monstres.
 > 
 > __Une clé__ 🔑 : Elle sera utilisée pour ouvrir des portes ou des coffres dans le jeu.
 > 
 > __Des buissons__ 🌿 : Ces objets serviront à décorer notre terrain et pourront être utilisés pour cacher des objets ou des passages secrets.
 > 
-> __Un coffre à ouvrir__ 🧰 : Ce sont les récompenses de notre héros. Ils contiendront des objets utiles comme des rubis, des clés ou des potions de santé.
+> __Un coffre à ouvrir__ 🧰 : Ce sont les récompenses de notre héros. Ils contiendront des objets utiles comme des pièces, des clés ou des potions de santé.
 
 # Création de la carte 🗺️
 

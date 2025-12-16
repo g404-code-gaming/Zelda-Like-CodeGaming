@@ -1,31 +1,27 @@
 # Création du comportement du personnage 🏃‍♂️
 
 Maintenant que nous avons notre monde, il est temps de donner vie à notre personnage. La création du comportement du personnage se fera en deux grandes parties : la définition des comportements et des variables, et l'écriture du code avec son animation.
-
-# Comportements et variables 📝
-
- ## Comportement
-Les comportements sont les actions que notre personnage peut effectuer, comme marcher, courir, sauter, attaquer, etc. Pour chaque comportement, nous devrons définir des variables qui contrôlent son fonctionnement. Par exemple, pour le comportement de marche, nous pourrions avoir des variables pour la vitesse de marche, la direction de marche, etc.
-
-Voici une liste des comportements et des variables que nous allons définir pour notre personnage :
-
-1. Marcher : vitesse de marche, direction de marche
-2. Attaquer : puissance de l'attaque, portée de l'attaque
-3. Interagir : distance d'interaction, objet d'interaction
    
-# 1. Création du comportement de déplacement
+## 1. Création du comportement de déplacement
 
-Notre personnage va devoir hériter d'un comportement "TopDownMouvement" Mais tout d'abord qu'est-ce qu'un top-Down Mouvement?
+Notre personnage va devoir hériter d'un [comportement](https://github.com/g404-code-gaming/GDevelop_Cour/blob/main/Comportement.md) **TopDownMouvement**, qui va lui permettre de se déplacer dans toutes les directions.
 
-Un top-down mouvement est un type de mouvement dans les jeux vidéo qui se caractérise par une vue aérienne inclinée vers le bas, des contrôles permettant de déplacer le personnage ou l'objet dans toutes les directions, et une utilisation courante dans une variété de genres de jeux pour offrir une perspective stratégique et une meilleure visibilité.
+Modifier les paramètres du comportement pour qu'ils soient adapter à votre jeu. Vous pouvez, par exemple, modifier la vitesse, l'accélération/déccélération. 
 
-On aimerait que le personnage n'ait pas d'inertie. Pour cela, on va effectuer une forte accélération vers une vitesse maximum lorsque l'on déplace notre personnage et une forte décélération lorsqu'on relâchera une touche de déplacement.
+Il faut cocher les *commandes par défaut* et décocher les *Tourner l'objet*. 
 
 ![TopDown](Images/TopDownPlayer.png)
 
 ## Variables
 
-Pour l'instant, nous créerons seulement une variable qu'on appellera "PV" qui représentera notre nombre de vie de notre personnage. On reviendra plus tard dans les variables du personnage n'allons pas trop vite.
+Nous allons avoir besoin des [variables](https://github.com/g404-code-gaming/GDevelop_Cour/blob/main/Variables.md) suivante sur notre personnage : 
+
+- CanHit : Détermine si le personnage possède une arme ou non. Il ne peut pas frapper si il n'a pas d'arme.
+- Cooldown : Une variable qui détermine le temps que le personnage met avant de pouvoir frapper à nouveau.
+
+![image variable](/Images/2_perso_variable.JPG)
+
+
 
 # Animation du personnage 🏃‍♂️
 

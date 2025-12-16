@@ -27,7 +27,7 @@ Nous allons avoir besoin des [variables](https://github.com/g404-code-gaming/GDe
 
 Maintenant, que notre personnage se déplace occupons-nous des animations. (De préférence, prenez un personnage avec les animations incluses)
 
-![CodeDeplacementPersonnage](Images/CodePersonageDeplacement.png)
+![CodeDeplacementPersonnage](Images/2_perso_animation.JPG)
 
 # 2. Création du comportement d'attaque du personnage ⚔️
 

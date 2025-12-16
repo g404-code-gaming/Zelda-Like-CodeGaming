@@ -27,14 +27,18 @@ Exemple :
 | Necromancer | 4 |
 | Angry Pig | 6 | 
 
-
 ## BigDemon 👹
 
 ![BigDemon](Images/BigDemon.png)
 
-BigDemon est un ennemi qui change de direction lorsqu'il heurte un mur. Cela signifie que si BigDemon se déplace vers le haut et heurte un mur, il commencera à se déplacer vers le bas. Cela permet à BigDemon de se déplacer de manière imprévisible, ce qui le rend plus difficile à éviter pour le joueur.
+BigDemon est un ennemi qui change de direction lorsqu'il heurte un mur. Cela signifie que si BigDemon se déplace vers la droite et heurte un mur, il commencera à se déplacer vers la gauche. C'est un ennemi de base facile à éviter et à tuer.
 
-## Variable
+### Variable
+
+il faut ajouter des variables supplémentaire au BigDemon : 
+
+AAAAA
+
 Direction : La direction dans laquelle BigDemon se déplace actuellement.
 Moved : Un booléen qui indique si BigDemon a déjà changé de direction lors de la collision actuelle.
 

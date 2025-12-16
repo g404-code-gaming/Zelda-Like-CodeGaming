@@ -41,6 +41,7 @@ Le comportement d'attaque de notre personnage sera déclenché lorsque le bouton
 ## Code 🖥️
 
 Commençons par **modifier les points** de notre Player et de notre **Sword** afin que leur programmation soit plus intuitive.
+Placez le point "Origin" au même endroit que le point "Center".
 
 ![image variable](Images/2_perso_points.JPG)
 

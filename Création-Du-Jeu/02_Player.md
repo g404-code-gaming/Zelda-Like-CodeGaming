@@ -20,11 +20,11 @@ Nous allons avoir besoin des [variables](https://github.com/g404-code-gaming/GDe
 - Cooldown : Une variable qui détermine le temps que le personnage met avant de pouvoir frapper à nouveau.
 - Direction : indique la direction actuelle du personnage, utile pour diriger les attaques.
 
-![image variable](/Images/2_perso_variable.JPG)
+![image variable](Images/2_perso_variable.JPG)
 
 Ensuite, ajoutez les évènements pour mettre à jour la variable de direction du personnage, nous en aurons besoin pour programmer les attaques.
 
-![image variable](/Images/2_Perso_deplacement.JPG)
+![image variable](Images/2_Perso_deplacement.JPG)
 
 # 2. Création du comportement d'attaque du personnage ⚔️
 
@@ -36,13 +36,13 @@ Maintenant que notre personnage peut se déplacer dans le monde, il est temps de
 
 Le comportement d'attaque de notre personnage sera déclenché lorsque le bouton d'attaque est pressé. Lorsque cela se produit, notre personnage va créer une épée et l'agiter dans la direction dans laquelle il fait face. Pour contrôler ce comportement, nous allons définir la variable suivante sur notre personnage :
 
-![image variable](/Images/2_perso_attack_image.JPG)
+![image variable](Images/2_perso_attack_image.JPG)
 
 ## Code 🖥️
 
 Commençons par **modifier les points** de notre Player et de notre **Sword** afin que leur programmation soit plus intuitive.
 
-![image variable](/Images/2_perso_points.JPG)
+![image variable](Images/2_perso_points.JPG)
 
 Nous pouvons désormais passer au programme : 
 

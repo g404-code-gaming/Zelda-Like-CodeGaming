@@ -12,7 +12,7 @@ Il faut cocher les *commandes par défaut* et décocher les *Tourner l'objet*.
 
 ![TopDown](Images/TopDownPlayer.png)
 
-## Variables
+### Variables
 
 Nous allons avoir besoin des [variables](https://github.com/g404-code-gaming/GDevelop_Cour/blob/main/Variables.md) suivante sur notre personnage : 
 
@@ -20,14 +20,6 @@ Nous allons avoir besoin des [variables](https://github.com/g404-code-gaming/GDe
 - Cooldown : Une variable qui détermine le temps que le personnage met avant de pouvoir frapper à nouveau.
 
 ![image variable](/Images/2_perso_variable.JPG)
-
-
-
-# Animation du personnage 🏃‍♂️
-
-Maintenant, que notre personnage se déplace occupons-nous des animations. (De préférence, prenez un personnage avec les animations incluses)
-
-![CodeDeplacementPersonnage](Images/2_perso_animation.JPG)
 
 # 2. Création du comportement d'attaque du personnage ⚔️
 
@@ -88,7 +80,13 @@ Voici à quoi pourrait ressembler ce code :
 
 Avec ce code, notre personnage ne pourra pas se déplacer sur les objets du groupe "Collision", ce qui rendra notre monde de jeu plus réaliste et plus intéressant à explorer.
 
+# BONUS : Animation du personnage 🏃‍♂️
 
+Si votre personnage possède plusieurs animations (voir les propriétés de l'objet), il est possible de modifier son apparence en fonction des directions vers lesquels ils se déplace. 
+
+Ajoutez les évènements suivants pour permettre à votre personnage d'adapter son animation en fonction de la touche de déplacement utilisée.
+
+![CodeDeplacementPersonnage](Images/2_perso_animation.JPG)
 
 Dans la prochaine section, nous allons ajouter des monstres à notre monde de jeu et leur donner un comportement d'attaque. Alors prenez votre épée jeune guerrier !!
 

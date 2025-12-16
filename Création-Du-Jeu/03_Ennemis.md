@@ -20,7 +20,12 @@ Une fois que cette variable est faite, allez dans les paramètres de chacun de v
 
 Exemple : 
 
-|| test || 
+| **Ennemi** | **PV** |
+|---------------|---------------|
+| Big Demon | 1 | 
+| Rock Head | 3 | 
+| Necromancer | 4 |
+| Angry Pig | 6 | 
 
 
 ## BigDemon 👹

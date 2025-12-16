@@ -47,20 +47,14 @@ Commençons par **modifier les points** de notre Player et de notre **Sword** af
 Nous pouvons désormais passer au programme : 
 
 Le code commence par vérifier si le bouton d'attaque est pressé et si le personnage est prêt à attaquer. 
+Cela invoque une épée et met les variables à jour, en plus de lancer un chronomètre. A la fin de la séquence, l'épée disparait toute seule.
 
-Ensuite, le code vérifie la direction dans laquelle le personnage fait face. Selon la direction, une épée est créée à une position spécifique par rapport au personnage, et son échelle et son angle sont ajustés pour qu'elle pointe dans la bonne direction.
+![CodeAttaqueCharacter](Images/2_perso_attack_1.JPG)
 
-Après avoir créé l'épée, le personnage est mis en cooldown, ce qui signifie qu'il ne peut pas attaquer à nouveau immédiatement. Des timers sont utilisés pour contrôler le temps que l'épée reste à l'écran et le temps que le personnage reste en cooldown.
+Ensuite, il faut ajouter les évènements pour que l'épée apparaisse dans la bonne direction et suive le joueur le temps de son attaque. 
+Il faut également ajouter l'évènement de fin qui remet la variable Cooldown à jour pour permettre de frapper à nouveau.
 
-Si le timer atteint 0.3 seconde, l'épée est supprimée de l'écran. Cela donne l'illusion que le personnage agite son épée.
-
-Si le timer de cooldown atteint 0.7 seconde, le personnage est autorisé à attaquer à nouveau. Cela empêche le personnage d'attaquer en continu et donne un rythme aux combats.
-
-Voici le résultat que vous devriez atteindre :
-
-![CodeAttaqueCharacter](Images/CodeAttaqueCharacterP1.png)
-![CodeAttaqueCharacter](Images/CodeAttaqueCharacterP2.png)
-
+![CodeAttaqueCharacter](Images/2_perso_attack_2.JPG)
 
 Avec ce code, notre personnage peut maintenant attaquer les monstres et se défendre.
 

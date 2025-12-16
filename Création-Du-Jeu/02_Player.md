@@ -25,19 +25,16 @@ Nous allons avoir besoin des [variables](https://github.com/g404-code-gaming/GDe
 
 Maintenant que notre personnage peut se déplacer dans le monde, il est temps de lui donner la possibilité de se défendre contre les monstres. Pour cela, nous allons créer un comportement d'attaque pour notre personnage.
 
+> Attention, dans le jeu, le personnage ne peut attaquer que s'il a rammassé une épée. Puisque nous avons besoin de l'épée pour faire nos tests, mettez la variable CanHit de votre Player à Vrai pour que le programme suivant fonctionne.
+
 ## Comportement et variables 📝
 
 Le comportement d'attaque de notre personnage sera déclenché lorsque le bouton d'attaque est pressé. Lorsque cela se produit, notre personnage va créer une épée et l'agiter dans la direction dans laquelle il fait face. Pour contrôler ce comportement, nous allons définir la variable suivante sur notre personnage :
 
-**Cooldown** : Cette variable contrôle le temps entre chaque attaque. Après chaque attaque, notre personnage doit attendre un certain temps avant de pouvoir attaquer à nouveau.
-
-**CanHit** : Cette variable correspond a si l'épée a été ramassée ou non. (libre à vous de l'avoir dès le début du jeu ou de devoir aller la récupérer)
-
-![StartVariableCharacter](Images/StartVariableCharacter.png)
 
 ## Code 🖥️
 
-Le code commence par vérifier si le bouton d'attaque est pressé et si le personnage est prêt à attaquer. Si c'est le cas, un son d'attaque est joué pour donner un retour audio à l'utilisateur.
+Le code commence par vérifier si le bouton d'attaque est pressé et si le personnage est prêt à attaquer. 
 
 Ensuite, le code vérifie la direction dans laquelle le personnage fait face. Selon la direction, une épée est créée à une position spécifique par rapport au personnage, et son échelle et son angle sont ajustés pour qu'elle pointe dans la bonne direction.
 

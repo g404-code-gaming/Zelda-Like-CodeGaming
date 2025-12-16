@@ -25,7 +25,7 @@ Nous allons avoir besoin des [variables](https://github.com/g404-code-gaming/GDe
 
 Maintenant que notre personnage peut se déplacer dans le monde, il est temps de lui donner la possibilité de se défendre contre les monstres. Pour cela, nous allons créer un comportement d'attaque pour notre personnage.
 
-> Attention, dans le jeu, le personnage ne peut attaquer que s'il a rammassé une épée. Puisque nous avons besoin de l'épée pour faire nos tests, mettez la variable CanHit de votre Player à Vrai pour que le programme suivant fonctionne.
+> Attention, dans le jeu, le personnage ne peut attaquer que s'il a ramassé une épée. Puisque nous avons besoin de l'épée pour faire nos tests, mettez la variable CanHit de votre Player à Vrai pour que le programme suivant fonctionne.
 
 ## Comportement et variables 📝
 

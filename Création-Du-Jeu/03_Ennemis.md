@@ -39,8 +39,6 @@ Pour vaincre nos ennemis, nous allons avoir besoin de deux évènements :
 
 Tester ces évènements : placez des ennemis sur la scène et frappez-les avec votre épée pour vérifier si ils disparaissent au bout de quelques attaques.
 
-AAA
-
 ## BigDemon 👹
 
 ![BigDemon](Images/BigDemon.png)

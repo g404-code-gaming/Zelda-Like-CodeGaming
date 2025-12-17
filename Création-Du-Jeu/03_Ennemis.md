@@ -47,37 +47,35 @@ AAA
 
 BigDemon est un ennemi qui change de direction lorsqu'il heurte un mur. Cela signifie que si BigDemon se déplace vers la droite et heurte un mur, il commencera à se déplacer vers la gauche. C'est un ennemi de base facile à éviter et à tuer.
 
+![VariableBigDemon](Images/3_ennemy_bigdemon_deplacement.JPG)
+
 ### Variable
 
-il faut ajouter des variables supplémentaire au BigDemon : 
+il faut ajouter une variable supplémentaire au BigDemon : 
 
-AAAAA
+![VariableBigDemon](Images/3_ennemy_bigdemon_variable.JPG)
+
+Cette variable définira la vitesse à laquelle il se déplace.
 
 Direction : La direction dans laquelle BigDemon se déplace actuellement.
 Moved : Un booléen qui indique si BigDemon a déjà changé de direction lors de la collision actuelle.
 
-![VariableBigDemon](Images/VariableBigDemon.png)
+![VariableBigDemon](Images/3_ennemy_bigdemon_variable.JPG)
 
-## Code 
-Tout d'abord, nous allons nous occuper de ses déplacements, on aimerait que l'ennemi fasse seulement des mouvements de gauche à droite ou de haut en bas. BigDemon sera notre ennemi le plus faible et basique pour donner une approche croissante dans la difficulté du jeu afin de ne pas décevoir les joueurs de mourir ou de tomber directement sur un ennemi compliqué à tuer.
+### Code 
 
-![DeplacementBigDemon](Images/DeplacementBigDemon.png)
+Le déplacement du Big Demon fonctionne comme suis : 
 
-Ensuite nous allons gérer les événements tels que la collision avec l'épée pour tuer l'ennemi et s'il nous touche.
+  - En permanance, l'ennemi se déplace d'une vitesse égale à sa variable Vitesse. ça signifie que, si sa variable est négative, il va vers la gauche, sinon, il va vers la droite.
+  - Ensuite, un évènement vérifie lorsqu'il entre en colision avec un obstacle. Si oui, le Big Demon inverse sa vitesse : cela lui fait changer de direction.
 
-Tout d'abord, commençons par le plus simple, c'est-à-dire si l'épée est en collision avec l'ennemi, on va tout simplement le supprimer. Rien de plus simple !!
+> Le programme "Pour chaque instance de" peut être trouvé dans les options de l'évènement --> Ajouter --> Pour chaque objet.
 
-![BigDemonDie](Images/DieBigDemon.png)
-
-Par la suite, on va gérer la collision de notre ennemi avec notre personnage. Avant tout de chose pour éviter de perdre tous ces PV d'un seul coup, on va rajouter sur notre personnage une variable booléenne qui définira si on est en état d'invincibilité ou non.
-
-![VariableDInvincibilité](Images/InvincibilitéCharacter.png)
-
-Puis maintenant retournons sur notre ennemi qui attend de pouvoir nous eliminer. Lors d'une collision de notre personnage contre l'ennemi, on fera perdre 1 PV à notre personnage et nous fera passer en état d'invincibilité pendant un certain temps.
-
-![BigDemonAttaque](Images/BigDemonAttaque.png)
+![VariableBigDemon](Images/3_ennemy_bigdemon_code.JPG)
 
 ## RockHead 🪨
+
+AAAA
 
 ![RockHead](Images/RockHead.png)
 

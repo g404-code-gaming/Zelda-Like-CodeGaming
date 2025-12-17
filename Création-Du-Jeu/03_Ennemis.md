@@ -73,32 +73,18 @@ Le déplacement du Big Demon fonctionne comme suis :
 
 ## RockHead 🪨
 
-AAAA
-
 ![RockHead](Images/RockHead.png)
 
-RockHead est un ennemi qui change d'animation lorsqu'il est touché. Cela signifie que lorsque le joueur attaque RockHead, l'animation de RockHead change pour montrer qu'il a été touché. De plus, la vie de RockHead est réduite chaque fois qu'il est touché. Si la vie de RockHead atteint 0, il est supposé être détruit.
+RockHead est un ennemi immobile qui bloque le chemin du joueur. Il a la particularité de changer d'animation lorsqu'il est frappé par le joueur.
 
-## Variable
+Pour que le joueur ne puisse pas traverser le RockHead : ajoutez RockHead à la liste des **Obstacles**
 
-Hit : Un booléen qui indique si RockHead a été touché par une attaque.
-Life : Le nombre de points de vie restants de RockHead.
+### Code
 
-![RockHeadVariables](Images/VariableRockHead.png)
+Lorsque RockHead est en collision avec l'épée du joueur, il déclenche une animation spéciale "Hit" 
 
-## Code
 
-Ce code commence par changer l'animation de RockHead à 1. Cela pourrait être l'animation que RockHead utilise lorsqu'il n'est pas en train d'être attaqué.
-
-Ensuite, le code vérifie si l'épée du joueur (SteelRapier24) est en collision avec RockHead, si RockHead n'a pas déjà été touché (la variable Hit est False) et si RockHead a encore de la vie (la variable Life est supérieure à 0).
-
-Si toutes ces conditions sont remplies, cela signifie que le joueur a réussi à attaquer RockHead. Le code réduit alors la vie de RockHead de 1 (ce qui représente les dégâts de l'attaque du joueur) et marque RockHead comme ayant été touché (la variable Hit devient True).
-
-Et enfin lorsque RockHead n'a plus de vie on supprime l'objet.
-
-Voici le résultat que vous devriez obtenir.
-
-![RockHeadCode](Images/CodeRockHead.png)
+![RockHeadCode](Images/3_ennemy_rockhead_code.JPG)
 
 ## Necromancien 💀
 

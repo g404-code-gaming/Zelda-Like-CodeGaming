@@ -86,6 +86,8 @@ Lorsque RockHead est en collision avec l'épée du joueur, il déclenche une ani
 
 ![RockHeadCode](Images/3_ennemy_rockhead_code.JPG)
 
+AAAA
+
 ## Necromancien 💀
 
 Necromancien est un ennemi qui tire un laser sur le joueur lorsqu'il est en charge. Cela signifie que lorsque Necromancien est en charge, il se déplace vers une position spécifique et tire un laser en direction du joueur. Cela rend Necromancien dangereux à distance, car il peut attaquer le joueur même s'il est loin de lui.

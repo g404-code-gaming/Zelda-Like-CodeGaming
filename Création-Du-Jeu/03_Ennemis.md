@@ -79,18 +79,19 @@ Pour que le joueur ne puisse pas traverser le RockHead : ajoutez RockHead à la 
 
 ### Code
 
-Lorsque RockHead est en collision avec l'épée du joueur, il déclenche une animation spéciale "Hit" 
-
+Lorsque RockHead est en collision avec l'épée du joueur, il déclenche une animation spéciale "Hit" pendant un court instant.
 
 ![RockHeadCode](Images/3_ennemy_rockhead_code.JPG)
 
-AAAA
+Le but du RockHead est d'être un obstacle statique pour le joueur. Afin qu'il bloque réellement le passage, vous pouvez l'ajouter au groupe des obstacles vus au chapitre précédent : ainsi, il empéchera le joueur de passer. 
 
 ## Necromancien 💀
 
-Necromancien est un ennemi qui tire un laser sur le joueur lorsqu'il est en charge. Cela signifie que lorsque Necromancien est en charge, il se déplace vers une position spécifique et tire un laser en direction du joueur. Cela rend Necromancien dangereux à distance, car il peut attaquer le joueur même s'il est loin de lui.
+Necromancien est un ennemi de milieu de niveaux qui se dirige vers le joueur lorsqu'il est proche et lui tire des laser. 
 
 ![Necromancien](Images/Necromancien.png)
+
+C'est un ennemi particulièrement dangereux, qui attaque à distance. Il peut donc attaquer le joueur de loin et le blesser sans que ce dernier puisse contre-attaquer. La meilleure méthode pour le vaincre consiste à renvoyer ses projectiles. 
 
 ## Variables
 

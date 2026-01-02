@@ -77,7 +77,7 @@ Ajoutez dans ce groupe tout les objets que le joueur ne peut pas traverser.
 
 Afin de rendre notre jeu plus proche, nous allons modifier les collisions de chaque objet **Obstacle**
 
-Dans les propriétés de votre objet, cliquez sur **Modifier les masques de collisions** et personnalisé la collision de votre objet. 
+Dans les propriétés de votre objet, cliquez sur **Modifier les masques de collisions** et personnalisez la collision de votre objet. 
 
 ![CodeAttaqueCharacter](Images/2_perso_collision.JPG)
 

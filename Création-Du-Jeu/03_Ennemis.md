@@ -93,27 +93,61 @@ Necromancien est un ennemi de milieu de niveaux qui se dirige vers le joueur lor
 
 C'est un ennemi particulièrement dangereux, qui attaque à distance. Il peut donc attaquer le joueur de loin et le blesser sans que ce dernier puisse contre-attaquer. La meilleure méthode pour le vaincre consiste à renvoyer ses projectiles. 
 
-## Variables
+### Fonctionnement 
 
-Charge : Un booléen qui indique si Necromancien est en train de charger son attaque.
-Cooldown : Un booléen qui permettra d'éviter les spams d'attaque.
+Le Nécromancien se déplace vers le joueur lorsqu'il se trouve à une distance correcte. 
+Lorsqu'il entre à portée d'attaque, il s'arrête et commence à charger un projectile pendant un court instant, visant le joueur. Lorsque le chargement est complet, le Nécromancien lance son projectile vers le joueur. 
 
-![NecromancienVariable](Images/VariableNecromancien.png)
+![Fonctionnement necro](Images/3_ennemy_necro_fonctionnement.JPG)
 
-## Comportement
+### Variables
 
-On va devoir lui rajouter un comportement de PathFinding c'est-à-dire que notre nécromancien vas chercher à rejoindre un endroit par n'importe quel chemin. 
+Le Nécromancien a besoin d'une variable **Cooldown**, qui permettra de savoir s'il est en train de tirer ou non. 
 
-![NecromancienComportement](Images/ComportementNecromancien.png)
+![variable necro](Images/3_ennemy_necro_variable.JPG)
 
+## Programme
 
-## Code
+Pour commencer, il faut permettre au Nécromancien de se déplacer lorsque le Player entre à portée de vue. 
+Il ne se déplace pas si il se trouve trop près du joueur, ou s'il est en train de tirer. 
 
-Le Necromancien est un ennemi qui a la capacité de tirer un laser sur le joueur. Pour cela, il utilise une variable Charge qui indique s'il est en train de charger son attaque et une variable Cooldown qui représente le temps restant avant qu'il ne puisse à nouveau tirer son laser.
+![variable necro](Images/3_ennemy_necro_deplacement.JPG)
 
-Le code vérifie si la variable Charge est True, ce qui signifie que le Necromancien est en train de charger son attaque. Si c'est le cas, le Necromancien définit sa destination de déplacement (Pathfinding) vers la position du joueur (Soldier), moins 20 pixels en X et Y. Cela fait en sorte que le Necromancien se déplace vers le joueur pour tirer son laser.
+Ensuite, lorsqu'il se trouve à portée du Player, il s'arrête et invoque un projectile. Pour gérer correctement la charge du projectile, nous utilisons des **Chronomètres**.
 
-![NecromancienCode](Images/CodeNecromancien.png)
+![variable necro](Images/3_ennemy_necro_attaque1.JPG)
+
+Pour que le projectile parte après un court chargement, et que le Nécromancien puisse tirer à nouveau, on crée deux évènements qui sont activé en fonction des chronomètres créés plus tôt : celui du projectile lui permet de se diriger vers le Player, et celui du Nécromancien lui permet de tirer à nouveau. 
+
+![variable necro](Images/3_ennemy_necro_attaque2.JPG)
+
+Testez votre Nécromancien pour vérifier qu'il fonctionne comme prévus : vérifiez qu'il approche votre joueur et s'arrête pour tirer des projectiles. 
+
+### Bonus : orienter le projectile vers le joueur 
+
+Si vous souhaitez que le projectile s'oriente vers le joueur pendant le chargement, pour donner l'impression que le Nécormancien vise sa cible, ajoutez l'évènement suivant qui modifie l'angle du projectile. 
+
+![variable necro](Images/3_ennemy_necro_attaque3.JPG)
+
+## Renvoyer les projectiles 
+
+Pour vaincre facilement le Nécromancien, il faut lui renvoyer ses projectiles dans la figure. 
+
+Pour des raisons de programme, nous allons plutôt procéder comme suis : 
+
+  > Lorsque le Player touche une flamme avec son épée, il détruit la flamme et invoque une flamme "alliée" à la place. Cette flamme part dans la direction opposée, donnant l'impression qu'elle a été renvoyée.
+
+Dupliquez donc votre projectile et renommez-le pour faire comprendre qu'il s'agit de celui de votre personnage.
+
+![variable necro](Images/3_ennemy_necro_flamme.JPG)
+
+### Programme 
+
+L'évènement de renvois des projectile consiste à invoquer un nouveau projectile à la position de celui de l'ennemi, supprimer le projectile ennemi, puis lancer le projectile allié : 
+
+![variable necro](Images/3_ennemy_necro_renvoi.JPG)
+
+AAAAA
 
 ## AngryPig 🐷
 

@@ -1,8 +1,8 @@
 # Création d'ennemis 🧟‍♂️
 
-Maintenant que nous avons notre personnage et notre carte, il est temps d'ajouter des ennemis pour rendre notre jeu plus intéressant. Dans ce tutoriel, nous allons créer 3 types d'ennemis : BigDemon, RockHead, Necromancer.
+Maintenant que nous avons notre personnage et notre carte, il est temps d'ajouter des ennemis pour rendre notre jeu plus intéressant. Dans ce tutoriel, nous allons créer 3 types d'ennemis : BigDemon, RockHead, Angrypig.
 
-Pour les plus rapides d'entre vous, le Angrypig sera en exercice bonus.
+Pour les plus rapides d'entre vous, le Necromancer sera en exercice bonus.
 
 ## Préparation des ennemis 
 
@@ -85,7 +85,34 @@ Lorsque RockHead est en collision avec l'épée du joueur, il déclenche une ani
 
 Le but du RockHead est d'être un obstacle statique pour le joueur. Afin qu'il bloque réellement le passage, vous pouvez l'ajouter au groupe des obstacles vus au chapitre précédent : ainsi, il empéchera le joueur de passer. 
 
-## Necromancien 💀
+## AngryPig 🐷
+
+![AngryPig](Images/AngryPig.png)
+
+AngryPig est un ennemi aggressif qui se met à poursuivre le joueur dés qu'il le vois. C'est un défi important, car il oblige le joueur à être réactif et à le fuir. 
+
+## Comportement 
+
+Pour rendre les déplacements du Angrypig plus fluide, nous allons utiliser le comportement **Pathfinding** (Recherche de chemin). 
+
+Ce comportement permet à l'ennemi d'éviter les obstacles et se diriger directement vers la position souhaitée (en l'occurence, le joueur). 
+
+![AngryPigComportement](Images/3_ennemy_angrypig_comportement1.JPG)
+
+Ce comportement va gérer les déplacements du Angrypig au lieu d'utiliser des forces.
+
+Dans les paramètres : Décochez la case **Tournez l'objet**.
+
+Pour qu'il fonctionne, il faut que chaque obstacle du jeu (ceux appartenant au groupe d'obstacle, reçoivent également un comportement : l'Obstacle à la recherche de chemin.
+
+![AngryPigComportement](Images/3_ennemy_angrypig_comportement2.JPG)
+
+### Programme 
+
+
+
+
+## BONUS : Necromancien 💀
 
 Necromancien est un ennemi de milieu de niveaux qui se dirige vers le joueur lorsqu'il est proche et lui tire des laser. 
 
@@ -147,48 +174,27 @@ L'évènement de renvois des projectile consiste à invoquer un nouveau projecti
 
 ![variable necro](Images/3_ennemy_necro_renvoi.JPG)
 
-AAAAA
+Pour finir, faites que les projectiles se suppriment en touchant leur cible respective.
 
-## AngryPig 🐷
+![variable necro](Images/3_ennemy_necro_suppr.JPG)
 
-![AngryPig](Images/AngryPig.png)
+Créez le groupe **Projectile**, dans lequel vous mettrez tout les projectiles. Ces derniers sont détruit lorsqu'ils touchent des éléments du décors. 
 
-AngryPig est un ennemi qui charge le joueur lorsqu'il est en colère. Cela signifie que lorsque AngryPig est en colère, sa vitesse de déplacement augmente et il se dirige directement vers le joueur. Cela rend AngryPig plus dangereux lorsque le joueur l'attaque, car il peut rapidement se rapprocher du joueur et l'attaquer.
+![variable necro](Images/3_ennemy_necro_supprdecor.JPG)
 
-## Variable
-Colère : Un booléen qui indique si AngryPig est en colère.
-Direction : La direction actuelle d'AngryPig.
-Life : Le nombre de points de vie restants d'AngryPig.
-Moved : Un booléen qui indique si AngryPig a déjà changé de direction lors de la collision actuelle.
+Pour l'instant, les projectiles ne font pas de dégât.
+  - Pour les projectiles ennemis, nous verrons ça plus tard, lorsque nous traiterons les Point de vie du personnage et la barre de vie.
+  - Pour ceux du joueur :
 
-![AngryPigVariable](Images/AngryPigVariable.png)
+Pour simplifier le programme et éviter de refaire plusieurs fois les mêmes évènements, nous allons créer un groupe "Attaque" dans lequel nous allons mettre tout les objet utilisés par le joueur pour attaquer. 
 
-## Comportement 
-Comme pour le nécromancien on va lui rajouter un comportement de PathFinding pour pouvoir chasser notre joueur lorsqu'il sera touché par l'épée.
+![variable necro](Images/3_ennemy_necro_attaquejoueur.JPG)
 
-![AngryPigComportement](Images/AngryPigComportement.png)
+Modifiez ensuite l'évènement d'attaque : remplacez l'épée par le groupe d'attaque.
 
-## Code
-Pour la partie code de notre AngryPig on va le découper en plusieurs parties qui sont :
+![variable necro](Images/3_ennemy_necro_attaquejoueur2.JPG)
 
-1. Les déplacements de base (hors colère)
-2. Phase de combat (avec la colère)
-3. La mort du AngryPig
-
-### les déplacement de base (hors colère)
-Pour ma part, j'ai choisi de les faire se déplacer comme les BigDemon sauf qu'ils iront que de haut en bas.
-
-![AngryPigCodeDéplacement](Images/AngryPigCodeDéplacement.png)
-
-### Phase de combat (avec la colère)
-Lorsque l'AngryPig rentrera en état de colère (frappée par l'épée) il changera totalement de style de déplacement tout d'abord, il s'arrêtera de bouger le temps de l'animation "Hit" puis ensuite ses déplacements seront focalisés sur le joueur, c'est-à-dire, il donnera tout pour vous toucher. Puis après un certain temps, on le fera se calmer et retourner à son état normal de Pig inoffensif.
-
-![AngryPigCodeFight](Images/AngryPigCodeFight.png)
-
-### La mort du AngryPig
-Pour sa mort rien de plus simple on supprimera le AngryPig et pour récompenser le player on lui donnera un rubis
-
-![AngryPigCodeDie](Images/AngryPigCodeDie.png)
+Désormais, les projectiles du joueur blessent correctement les ennemis. 
 
 # Conclusion
 

@@ -109,8 +109,9 @@ Pour qu'il fonctionne, il faut que chaque obstacle du jeu (ceux appartenant au g
 
 ### Programme 
 
+Le programme du Angrypig est simple : lorsqu'il vois le Player, il se met à courir vers lui à toute vitesse, en utilisant l'action de déplacement du Pathfinding. 
 
-
+![AngryPigComportement](Images/3_ennemy_angrypig_programme.JPG)
 
 ## BONUS : Necromancien 💀
 

@@ -17,7 +17,7 @@ Il est conseillé d'utiliser les monstres suivant : *Rock Head* ; *BigDemon* ; *
 > 
 > __Un objet pour représenter nos PV__ ❤️ : Cet objet servira d'indicateur de la santé de notre héros.
 > 
-> __Une pièce d'or 💎 : C'est la monnaie de notre jeu. Notre héros pourra collecter des pièces en explorant le monde et en combattant les monstres.
+> __Une pièce d'or__ 💎 : C'est la monnaie de notre jeu. Notre héros pourra collecter des pièces en explorant le monde et en combattant les monstres.
 > 
 > __Une clé__ 🔑 : Elle sera utilisée pour ouvrir des portes ou des coffres dans le jeu.
 > 

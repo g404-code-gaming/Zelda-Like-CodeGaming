@@ -33,7 +33,22 @@ Ajoutez les deux évènements permettant de faire fonctionner la perte de point 
 Lorsque le personnage meurre, on relance la scène en cours pour faire recommencer le joueur. 
 
 ![PV code]() 
-____________
+
+Après avoir ajouté ces évènement, testez votre jeu pour voir si il fonctione correctement. 
+
+### BONUS - information visuelle des dégâts 
+
+Comme exercice bonus, essayez d'ajouter un effet visuel quand votre personnage subit des dégâts : c'est un bon moyen d'indiquer au joueur ce qu'il se passe. 
+
+**Exemples** : 
+- Faire apparaître un explosion ou un symbole 'Hit' à proximité de votre personnage quand il se fait toucher.
+- Couvrir l'écran de rouge quand votre personnage se fait toucher.
+- le rendre temporairement transparent quand il se fait toucher.
+
+____
+
+
+## Interface Utilisateur (UI) 
 
 L'interface utilisateur, ou UI, est un aspect essentiel de tout jeu. Elle est l'intermédiaire entre le joueur et le jeu lui-même, fournissant des informations essentielles et permettant au joueur de contrôler le jeu. Une bonne UI est claire, intuitive et donne au joueur toutes les informations dont il a besoin sans être encombrante ou distrayante.
 

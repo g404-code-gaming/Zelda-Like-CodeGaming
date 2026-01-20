@@ -108,14 +108,19 @@ C'est ici qu'entre en scène la variable **barre_PV** que nous avons crée plus 
 
 Pour commencez, au lancement de la scène, il faux définir les point de vie du joueur et mettre à jour la variable barre_PV.
 
+![variable PV](Images/4_UI_PV_code_1.JPG) 
 
+Ensuite, modifier le code de perte de point de vie pour qu'il modifie l'affichage des coeurs et la barre_PV.
 
-### Code 💻
+![variable PV](Images/4_UI_PV_code_2.JPG) 
 
-Pour la partie code, j'ai choisi de changer les animations de mes pommes pour savoir le nombre de PV restant.
-Nous reprendrons notre variable PV du Personnage et en fonction de sa valeur, on affichera à l'écran le nombre de PV restant.
+Enfin, ajoutez le programme qui affiche (ou ré-affiche) les coeurs sur l'UI en fonction de la valeur de barre_PV. 
 
-![LifeCodeUI](Images/LifeCodeUI.png)
+![variable PV](Images/4_UI_PV_code_3.JPG) 
+
+Si les coeurs n'apparaissent pas exactement comme vous le souhaitez, modifier les valeurs X et Y d'apparition et changez leur taille. 
+
+Une fois les évènements terminés, testez votre jeu pour voir si les coeurs apparaissent et réapparaissent correctement après avoir subie des dégâts.
 
 ## Système de Rubis 💎
 

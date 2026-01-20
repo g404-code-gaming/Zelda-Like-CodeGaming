@@ -50,29 +50,46 @@ ____
 
 ## Interface Utilisateur (UI) 
 
-L'interface utilisateur, ou UI, est un aspect essentiel de tout jeu. Elle est l'intermédiaire entre le joueur et le jeu lui-même, fournissant des informations essentielles et permettant au joueur de contrôler le jeu. Une bonne UI est claire, intuitive et donne au joueur toutes les informations dont il a besoin sans être encombrante ou distrayante.
+L'interface utilisateur, ou UI, est un aspect essentiel de tout jeu. Elle est l'intermédiaire entre le joueur et le jeu lui-même, fournissant des informations essentielles et permettant au joueur de contrôler le jeu. 
 
-Dans ton jeu, nous allons diviser l'UI en deux systèmes principaux : un pour les points de vie (PV) et un pour les rubis.
+C'est grâce à l'UI que nous pouvons afficher, par exemple, les points de vie, le temps restant, l'arme équipée, des informations sur les contrôles, ect....
 
-1. Utilisation de Calque : introduction à la bonne utilisation des calques + à quoi servent-ils.
+En l'occurence, il nous servira à afficher trois informations : 
+- Les Point de vie actuels de notre personnage
+- Les pièces d'Or possédées par notre personnage
+- Les Clés possédée par notre personnage
 
-2. Système de PV : Ce système affiche le nombre actuel de points de vie du joueur. C'est une information cruciale, car elle indique au joueur combien de dégâts il peut encore subir avant de perdre. Le système de PV doit être facile à comprendre et à lire rapidement, même en plein combat.
+![exemple UI]() 
 
-3. Système de Rubis : Ce système affiche le nombre actuel de rubis que le joueur a collecté. Les rubis nous servirons pour un passage du jeux plus tard. Comme le système de PV, le système de rubis doit être clair et facile à lire.
+### Préparer le terrain 
 
-En combinant ces deux systèmes, nous pouvons créer une UI qui donne au joueur toutes les informations dont il a besoin pour jouer efficacement. Dans les prochaines sections, nous allons examiner comment mettre en œuvre ces systèmes dans ton jeu.
+### Calque 
 
-## Les Calques
+Pour faire un interface, il faut créer un nouveau calque **UI**.
 
-Dans GDevelop, les calques sont utilisés pour organiser les objets sur la scène. Ils fonctionnent un peu comme des couches dans un logiciel de graphisme : tu peux avoir plusieurs calques, et les objets sur un calque supérieur apparaîtront au-dessus des objets sur un calque inférieur.
+![Calque]() 
 
-Cela peut être très utile pour créer des effets de profondeur dans ton jeu. Par exemple, tu pourrais avoir un calque pour le ciel, un autre pour les bâtiments en arrière-plan, un autre pour les personnages et les objets interactifs, et un autre pour l'interface utilisateur.
+Ce calque sera comme une couche invisible par dessus le jeu, qui nous permettra de faire apparaître des objets que ne seront pas physiquement avec les autres (parfait pour un interface !). 
 
-Dans ton jeu, tu utiliseras probablement au moins deux calques pour l'interface utilisateur : un pour le système de points de vie et un pour le système de rubis. Cela te permettra de contrôler précisément où ces éléments apparaissent à l'écran et de t'assurer qu'ils sont toujours visibles pour le joueur.
+### Placement des objets de calque 
 
-Il est important de noter que les calques sont aussi utilisés pour déterminer l'ordre de rendu des objets. Les objets sur un calque supérieur sont rendus après les objets sur un calque inférieur, ce qui signifie qu'ils apparaîtront au-dessus des objets sur les calques inférieurs.
+Tu as remarqué que les objets qui apparaissent sur le calque ressemble à ceux que le joueur peut rammasser en jeu. 
+En fait, si ils se ressemblent, ce sont en fait deux objets différents : le premier peut être rammassé dans le niveau, l'autre sers à apparaître sur l'UI.
 
-![Calque](Images/layers.jpg)
+Duplique tes objets **Heart**, **Gold** et **Key** pour avoir de nouveaux objets : Gold_UI, Heart_UI et Key_UI.
+
+Crée ensuite deux nouveaux objets de type **texte** : Text_Gold et Text_Key.
+
+Ces textes servirons à afficher les pièces d'or et les clés du joueur. 
+
+Place-le ensuite tout tes nouveaux objets sur la scène de manière à ce qu'ils soient visible dans la caméra **ET** fassent partie du calque UI. 
+
+
+
+
+AAAAAAAAAAAAAAA
+
+![Calque]() 
 
 ## Système de PV 🍎
 

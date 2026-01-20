@@ -49,14 +49,13 @@ BigDemon est un ennemi qui change de direction lorsqu'il heurte un mur. Cela sig
 
 ### Variable
 
-il faut ajouter une variable supplémentaire au BigDemon :
+il faut ajouter deux variables supplémentaires au BigDemon :
 
-Direction : La direction dans laquelle BigDemon se déplace actuellement.
-Moved : Un booléen qui indique si BigDemon a déjà changé de direction lors de la collision actuelle.
+Vitesse : La vitesse à laquelle se déplace le monstre.
+
+Change : Un booléen qui est faux de base. Il deviens Vrai quand le BigDemon percute un élément de décors : cette variable sers à empécher le BigDemon de changer de direction plusieurs fois de suite sur le même obstacle.
 
 ![VariableBigDemon](Images/3_ennemy_bigdemon_variable.JPG)
-
-Cette variable définira la vitesse à laquelle il se déplace.
 
 ### Code 
 

@@ -22,8 +22,17 @@ Nous auront besoin de trois variables :
 
 ![variable PV]() 
 
+Ensuite, créer le Groupe **Danger**. Un Groupe qui contiendra tout les objets du jeu qui font perdre des point de vie au personnage du joueur en le touchant (cela inclue la plupart des ennemis, mais aussi les projectiles ou les éventuels pièges)
 
+![groupe danger]() 
 
+### Programme 
+
+Ajoutez les deux évènements permettant de faire fonctionner la perte de point de vie et la mort du personnage. 
+
+Lorsque le personnage meurre, on relance la scène en cours pour faire recommencer le joueur. 
+
+![PV code]() 
 ____________
 
 L'interface utilisateur, ou UI, est un aspect essentiel de tout jeu. Elle est l'intermédiaire entre le joueur et le jeu lui-même, fournissant des informations essentielles et permettant au joueur de contrôler le jeu. Une bonne UI est claire, intuitive et donne au joueur toutes les informations dont il a besoin sans être encombrante ou distrayante.

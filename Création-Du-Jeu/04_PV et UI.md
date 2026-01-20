@@ -124,20 +124,32 @@ Si les coeurs n'apparaissent pas exactement comme vous le souhaitez, modifier le
 
 Une fois les évènements terminés, testez votre jeu pour voir si les coeurs apparaissent et réapparaissent correctement après avoir subie des dégâts.
 
-## Système de Rubis 💎
+## Or et clé 💎
 
-Dans notre jeu, les rubis serviront de monnaie. Le joueur pourra collecter des rubis en jouant, et ces rubis pourront être utilisés pour acheter des objets ou des améliorations.
+Dans notre jeu, l'or servira de monnaie. L'or servira plus tard pour satisfaire des PNJ afin qu'ils nous laisse passer. 
 
-Pour afficher le nombre de rubis que le joueur a collecté, nous allons d'abord placer un objet rubis sur le calque "UI". Cet objet servira d'icône pour représenter les rubis dans l'interface utilisateur.
+Les Clés, quand à elle, serviront à ouvrir les portes fermées. Ce sera grâce à une clé que nous entrerons dans le donjon. 
 
-Ensuite, nous allons créer une variable globale "Rubis" pour le jeu. Cette variable sera utilisée pour garder une trace du nombre total de rubis que le joueur a collecté. Chaque fois que le joueur collecte un rubis dans le jeu, nous augmenterons la valeur de cette variable de 1.
+### Variables 
 
-![VariableGlobalUI](Images/VariableGlobalUI.png)
+Ajoutez les variables globales Gold_Player et Key_Player. 
 
-Enfin, nous allons créer un objet de type texte sur le calque "UI". Cet objet affichera la valeur actuelle de la variable "Rubis", permettant ainsi au joueur de voir combien de rubis il a collecté.
+![variable PV](Images/4_UI_gold_var.JPG) 
 
-![MoneyUI](Images/MoneyUI.png)
+> NOTE : il ne faut pas leur mettre le même nom que les objets **Gold** et **Key** : cela peut provoquer des erreurs dans les évènements
 
-En combinant ces éléments, nous pouvons créer un système de rubis qui est à la fois visuellement attrayant et facile à comprendre pour le joueur.
+### Programme 
 
-[Lien Item](https://github.com/g404-code-gaming/Zelda-Like-CodeGaming/blob/main/Cr%C3%A9ation-Du-Jeu/05_Item.md)
+Dans les évènements, ajoutez un évènement sans condition qui met à jour les textes de GoldText et KeyText en fonction de la valeur des variables précédentes : 
+
+![variable PV](Images/4_UI_gold_code_1.JPG) 
+
+Ensuite, ajoutez, pour chaque objet, l'évènement qui permet de le "rammasser" : lorsque le personnage du joueur entre en contact avec l'objet précieux, il augmente la variable associée et supprime l'objet.
+
+![variable PV](Images/4_UI_gold_code_2.JPG) 
+
+Testez votre programme pour vérifier que vous pouvez rammasser les clés et les pièces d'Or. 
+
+Avec tout ça, vous avez vus les bases d'un Interface Utilisateur et avez ajouté ce qu'il fallait pour avoir un jeu d'aventure jouable. 
+
+[Partie 5 - Items](https://github.com/g404-code-gaming/Zelda-Like-CodeGaming/blob/main/Cr%C3%A9ation-Du-Jeu/05_Item.md)

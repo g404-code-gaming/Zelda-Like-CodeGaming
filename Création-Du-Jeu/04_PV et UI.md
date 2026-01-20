@@ -10,7 +10,21 @@ Pour commencer, il faut initialiser les points de vie du personnage.
 
 Puisqu'il pourra être déplacé d'un niveau à l'autre, notre personnage dois avoir des point de vie en variables globales. 
 
-> Pour trouver où sont les variables globales, retourner [au cours des variables](https://github.com/g404-code-gaming/GDevelop_Cour/blob/main/Variables.md)
+> Pour trouver où sont les variables globales, retournez voir le [ cours des variables](https://github.com/g404-code-gaming/GDevelop_Cour/blob/main/Variables.md)
+
+Nous auront besoin de trois variables : 
+
+- PV max : les PV que possède notre personnage au départ. Lorsqu'il meurre ou que le joueur relance la partie, le personnage possède ce nombre de PV.
+
+- PV actuel : la véritable valeur de PV du personnage : c'est la quantité de point de vie qu'il a en jeu. Si ces PV actuels tombent à 0, il meurre.
+
+- Barre PV : une variable qui servira pour la partie UI.
+
+![variable PV]() 
+
+
+
+____________
 
 L'interface utilisateur, ou UI, est un aspect essentiel de tout jeu. Elle est l'intermédiaire entre le joueur et le jeu lui-même, fournissant des informations essentielles et permettant au joueur de contrôler le jeu. Une bonne UI est claire, intuitive et donne au joueur toutes les informations dont il a besoin sans être encombrante ou distrayante.
 

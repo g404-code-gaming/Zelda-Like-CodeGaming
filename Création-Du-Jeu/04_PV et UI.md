@@ -118,6 +118,8 @@ Enfin, ajoutez le programme qui affiche (ou ré-affiche) les coeurs sur l'UI en 
 
 ![variable PV](Images/4_UI_PV_code_3.JPG) 
 
+> Attention : les Coeurs sont crée sur le calque UI (cf. la partie verte dans le code ci-dessus)
+
 Si les coeurs n'apparaissent pas exactement comme vous le souhaitez, modifier les valeurs X et Y d'apparition et changez leur taille. 
 
 Une fois les évènements terminés, testez votre jeu pour voir si les coeurs apparaissent et réapparaissent correctement après avoir subie des dégâts.

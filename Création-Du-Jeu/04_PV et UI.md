@@ -76,13 +76,13 @@ En fait, si ils se ressemblent, ce sont en fait deux objets différents : le pre
 
 Duplique tes objets **Heart**, **Gold** et **Key** pour avoir de nouveaux objets : Gold_UI, Heart_UI et Key_UI.
 
-Crée ensuite deux nouveaux objets de type **texte** : Text_Gold et Text_Key.
+Créez ensuite deux nouveaux objets de type **texte** : **Text_Gold** et **Text_Key**.
 
 ![Calque](Images/4_UI_texte.JPG) 
 
 Ces textes servirons à afficher les pièces d'or et les clés du joueur. 
 
-Place-le ensuite tout tes nouveaux objets sur la scène de manière à ce qu'ils soient visible dans la caméra. 
+Placez ensuite tout vos nouveaux objets sur la scène de manière à ce qu'ils soient visible dans la caméra. 
 
 ![Calque](Images/4_UI_doubleobjet.JPG) 
 
@@ -90,26 +90,25 @@ Chaque objet de l'UI doit être placée dans le calque UI :
 
 ![Calque](Images/4_UI_objet_calque.JPG) 
 
+Vous pouvez vérifier que les objets fonctionnent comme prévus en lançant l'aperçus. 
 
-AAAAAAAAAAAAAAA
+A ce stade du projet, les valeurs des textes sont vide et les PV n'apparaissent pas correctement quand on subie des dégâts : c'est normal. 
 
-![Calque]() 
+Il faut seulement vérifier que les éléments du UI soient bien placés et qu'ils bougent en même temps que le personnage. 
 
-## Système de PV 🍎
+## Interface des PV 🍎
 
-Pour gérer les points de vie du joueur dans notre jeu, nous allons créer un calque spécifique pour l'interface utilisateur, que nous appellerons "UI". Ce calque sera utilisé pour afficher les informations relatives aux points de vie du joueur.
+Pour gérer les points de vie du joueur dans notre jeu, nous allons utiliser une méthode permettant de faire apparaître une ligne de Coeurs représentant les PV du personnage. 
 
-![CalqueUI](Images/CalqueUI.png)
+![Calque](Images/4_UI_coeur.JPG) 
 
-Nous allons ensuite créer un objet qui représente un point de vie. Cet objet pourrait être une simple icône de cœur, ou tout autre symbole que tu juges approprié.
+Ces coeurs n'apparaissent pas par défaut dans la scène : nous allons utiliser une série d'évènement pour qu'ils apparaissent et disparaissent à chaque fois que le personnage gagne ou perd des PV. 
 
-Une fois que nous avons notre objet PV, nous allons le dupliquer autant de fois que le nombre de points de vie que nous voulons donner au joueur. Par exemple, si nous voulons que le joueur commence avec 3 points de vie, nous allons créer 3 copies de notre objet PV sur le calque UI.
+C'est ici qu'entre en scène la variable **barre_PV** que nous avons crée plus tôt. 
 
-![LifeUI](Images/LifeUI.png)
+Pour commencez, au lancement de la scène, il faux définir les point de vie du joueur et mettre à jour la variable barre_PV.
 
-Ces objets PV seront disposés de manière à ce qu'ils soient facilement visibles pour le joueur. Par exemple, ils pourraient être alignés en haut de l'écran.
 
-Lorsque le joueur perd un point de vie, nous supprimons simplement un des objets PV du calque UI ou ferons apparaître pour ma part une pomme noire (Changement d'animation). De cette façon, le nombre d'objets PV visibles sur l'écran correspond toujours au nombre de points de vie restants du joueur.
 
 ### Code 💻
 

@@ -2,7 +2,15 @@
 
 Dans ce chapitre, nous allons ajouter tout ce qu'il faut pour que le personnage puisse perdre des Point de vie et mourir dans le jeu. 
 
+## Point de vie
 
+### Variables et groupes 
+
+Pour commencer, il faut initialiser les points de vie du personnage. 
+
+Puisqu'il pourra être déplacé d'un niveau à l'autre, notre personnage dois avoir des point de vie en variables globales. 
+
+> Pour trouver où sont les variables globales, retourner [au cours des variables](https://github.com/g404-code-gaming/GDevelop_Cour/blob/main/Variables.md)
 
 L'interface utilisateur, ou UI, est un aspect essentiel de tout jeu. Elle est l'intermédiaire entre le joueur et le jeu lui-même, fournissant des informations essentielles et permettant au joueur de contrôler le jeu. Une bonne UI est claire, intuitive et donne au joueur toutes les informations dont il a besoin sans être encombrante ou distrayante.
 

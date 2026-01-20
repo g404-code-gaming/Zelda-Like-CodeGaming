@@ -78,7 +78,7 @@ Duplique tes objets **Heart**, **Gold** et **Key** pour avoir de nouveaux objets
 
 Crée ensuite deux nouveaux objets de type **texte** : Text_Gold et Text_Key.
 
-![Calque](Images/4_texte.JPG) 
+![Calque](Images/4_UI_texte.JPG) 
 
 Ces textes servirons à afficher les pièces d'or et les clés du joueur. 
 

@@ -144,7 +144,7 @@ Dans les évènements, ajoutez un évènement sans condition qui met à jour les
 
 ![variable PV](Images/4_UI_gold_code_1.JPG) 
 
-Ensuite, ajoutez, pour chaque objet, l'évènement qui permet de le "rammasser" : lorsque le personnage du joueur entre en contact avec l'objet précieux, il augmente la variable associée et supprime l'objet.
+Ensuite, ajoutez, pour chaque objet, l'évènement qui permet de le "ramasser" : lorsque le personnage du joueur entre en contact avec l'objet précieux, il augmente la variable associée et supprime l'objet.
 
 ![variable PV](Images/4_UI_gold_code_2.JPG) 
 

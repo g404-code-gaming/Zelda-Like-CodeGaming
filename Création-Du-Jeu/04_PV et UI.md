@@ -20,11 +20,11 @@ Nous auront besoin de trois variables :
 
 - Barre PV : une variable qui servira pour la partie UI.
 
-![variable PV]() 
+![variable PV](Images/4_PV_variable.JPG) 
 
 Ensuite, créer le Groupe **Danger**. Un Groupe qui contiendra tout les objets du jeu qui font perdre des point de vie au personnage du joueur en le touchant (cela inclue la plupart des ennemis, mais aussi les projectiles ou les éventuels pièges)
 
-![groupe danger]() 
+![groupe danger](Images/4_PV_groupe.JPG) 
 
 ### Programme 
 
@@ -32,7 +32,7 @@ Ajoutez les deux évènements permettant de faire fonctionner la perte de point 
 
 Lorsque le personnage meurre, on relance la scène en cours pour faire recommencer le joueur. 
 
-![PV code]() 
+![PV code](Images/4_PV_code.JPG) 
 
 Après avoir ajouté ces évènement, testez votre jeu pour voir si il fonctione correctement. 
 
@@ -44,9 +44,7 @@ Comme exercice bonus, essayez d'ajouter un effet visuel quand votre personnage s
 - Faire apparaître un explosion ou un symbole 'Hit' à proximité de votre personnage quand il se fait toucher.
 - Couvrir l'écran de rouge quand votre personnage se fait toucher.
 - le rendre temporairement transparent quand il se fait toucher.
-
 ____
-
 
 ## Interface Utilisateur (UI) 
 
@@ -59,7 +57,7 @@ En l'occurence, il nous servira à afficher trois informations :
 - Les pièces d'Or possédées par notre personnage
 - Les Clés possédée par notre personnage
 
-![exemple UI]() 
+![exemple UI](Images/4_UI_exemple.JPG) 
 
 ### Préparer le terrain 
 
@@ -67,7 +65,7 @@ En l'occurence, il nous servira à afficher trois informations :
 
 Pour faire un interface, il faut créer un nouveau calque **UI**.
 
-![Calque]() 
+![Calque](Images/4_UI_calque.JPG) 
 
 Ce calque sera comme une couche invisible par dessus le jeu, qui nous permettra de faire apparaître des objets que ne seront pas physiquement avec les autres (parfait pour un interface !). 
 
@@ -80,11 +78,17 @@ Duplique tes objets **Heart**, **Gold** et **Key** pour avoir de nouveaux objets
 
 Crée ensuite deux nouveaux objets de type **texte** : Text_Gold et Text_Key.
 
+![Calque](Images/4_texte.JPG) 
+
 Ces textes servirons à afficher les pièces d'or et les clés du joueur. 
 
-Place-le ensuite tout tes nouveaux objets sur la scène de manière à ce qu'ils soient visible dans la caméra **ET** fassent partie du calque UI. 
+Place-le ensuite tout tes nouveaux objets sur la scène de manière à ce qu'ils soient visible dans la caméra. 
 
+![Calque](Images/4_UI_doubleobjet.JPG) 
 
+Chaque objet de l'UI doit être placée dans le calque UI : 
+
+![Calque](Images/4_UI_objet_calque.JPG) 
 
 
 AAAAAAAAAAAAAAA

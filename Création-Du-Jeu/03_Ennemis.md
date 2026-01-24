@@ -205,4 +205,4 @@ Nous avons des ennemis, mais notre personnage est invincible... le jeu n'a donc 
 Dans la prochaine partie, nous allons voir comment programmer les points de vie pour le personnage. 
 Nous allons également voir comment faire apparaître les points de vie grâce à un interface utilisateur (UI)
 
-[Chapitre : UI](https://github.com/g404-code-gaming/Zelda-Like-CodeGaming/blob/main/Cr%C3%A9ation-Du-Jeu/04_UI.md)
+[Chapitre : UI](https://github.com/g404-code-gaming/Zelda-Like-CodeGaming/blob/main/Cr%C3%A9ation-Du-Jeu/04_PV%20et%20UI.md)

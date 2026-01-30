@@ -15,15 +15,15 @@ Vous devez aussi **modifier la variable Canhit** du personnage pour la mettre à
 
 Attention, l'épée que le coffre va faire apparaître n'est pas le même objet que l'épée utiliser pour attaquer : **Dupliquez votre objet d'épée** pour avoir une épée pour attaquer, et une épée par terre. 
 
-![dupliquer épée](Images/CodeChest.png)
+![dupliquer épée](Images/5_coffre_epee2.JPG)
 
 Ajouter ensuite l'évènement pour que le coffre s'ouvre au contact du joueur et fasse apparaître une épée. 
 
-![coffre épée](Images/CodeChest.png)
+![coffre épée](Images/5_coffre_code1.JPG)
 
 Pour finir, ajouter le programme pour que le personnage puisse prendre l'épée. 
 
-![ramasse épée](Images/CodeChest.png)
+![ramasse épée](Images/5_coffre_code2.JPG)
 
 Une fois fait, testez votre jeu pour voir si tout fonctionne. 
 
@@ -31,13 +31,15 @@ Une fois fait, testez votre jeu pour voir si tout fonctionne.
 
 Dans le jeu, les buissons peuvent être frappé pour faire apparaître des objets aléatoires : des coeurs, de l'or, .... tout ce qui vous passe par la tête (même des ennemis). 
 
+![buisson](Images/5_buisson.JPG)
+
 Pour mettre en place ce système, nous allons d'abord déterminer quels items peuvent être trouvés en cassant de l'herbe. Ensuite, chaque fois que le joueur casse de l'herbe, nous allons générer un nombre aléatoire et utiliser ce nombre pour décider si un item doit être crée ou non, et lequel.
 
 Premièrement, nous allons utiliser une variable locale : c'est une variable qui n'existe que dans l'évènement. C'est utile pour des manipulations mathématiques (ici, la variable sers à créer un nombre aléatoire). 
 
 Nous faisont ensuite apparaître un objet en fonction de la valeur de cette variable. 
 
-![buisson](Images/CodeChest.png)
+![buisson](Images/5_buisson_code.JPG)
 
 ## Trou, pont et bouton
 

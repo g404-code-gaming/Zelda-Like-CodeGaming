@@ -45,7 +45,7 @@ Nous faisont ensuite apparaître un objet en fonction de la valeur de cette vari
 
 Pour créer un obstacle suplémentaire au joueur, nous allons ajouter un trou, qui est un **obstacle** (ajoutez-le à la liste des obstacles). 
 
-![Trou](Images/CodeChest.png)
+![Trou](Images/5_trou.JPG)
 
 L'objectif, pour le joueur, est de trouver un bouton qui va faire apparaître un pont au dessus du trou. Ce sera le moyen d'accéder au donjon. 
 
@@ -55,13 +55,15 @@ Ajoutez une animation au Trou. Il dois avoir :
 - Une animation "fermée" : quand il n'y a pas de pont et que le joueur ne peut pas passer
 - Une animation "ouverte" : quand le joueur peut passer
 
+![Trou deux images](Images/5_trou_anim.JPG)
+
 Pour chaque animation, modifier les collisions : l'animation "ouverte" doit avoir un trou entre les deux (voir image).
 
-![Trou deux images](Images/CodeChest.png)
+![Trou deux images](Images/5_trou_coll.JPG)
 
 Ensuite, ajoutez le programme du bouton pour que ce dernier, une fois en collision avec le joueur, modifie l'animation du trou et fasse apparaître un pont. 
 
-![Pont](Images/CodeChest.png)
+![Pont](Images/5_trou_code.JPG)
 
 Testez votre programme pour voir si il fonctionne.
 
@@ -71,16 +73,18 @@ Un nouveau défi se présente à nous : le **Canon**
 
 Il tire des balles directement sur le joueur quand ce dernier approche trop. 
 
+![Canon](Images/5_canon.JPG)
+
 Ajoutez un **Canon** sur votre jeu, ainsi que des projectiles (exemple : des boulets)
 
 Les boulets font partie du groupe **Danger**. Le canon, lui, est invincible et ne fait partis d'aucun groupe (si vous voulez en faire un ennemi, c'est possible : il faut l'ajouter au groupe **Ennemi**).
 
+Pour que le canon puisse tirer, il faut lui ajouter le **[Comportement](https://github.com/g404-code-gaming/GDevelop_Cour/blob/main/Comportement.md) Fire Bullet**.
 Voici le programme pour que le canon tire sur le joueur dés qu'il approche trop.
 
-![Canon](Images/CodeChest.png)
+![Canon](Images/5_canon_code.JPG)
 
 Testez votre canon pour voir si il tire correctement vers le joueur et si ces projectiles blessent le personnage.
-
 ___
 
 Avec tout ses évènements, vous avez les clés en main pour faire un niveau complet. Agencez-les de manière à proposer plein de défi à ceux qui testerons votre jeux. 

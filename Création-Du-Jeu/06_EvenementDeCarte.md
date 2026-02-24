@@ -1,36 +1,83 @@
-# Partie 1 : Le bouton qui crée un pont 🌉
+# 6 - Le Donjon
 
-Dans notre jeu, nous allons inclure un bouton que le joueur peut activer pour créer un pont. Ce pont peut être utilisé pour traverser une rivière ou un ravin, ou pour accéder à une zone autrement inaccessible.
+Désormais, nous pouvons considérer avoir tout les éléments en main pour avoir un niveau complet et fonctionnel. 
 
-Pour cela, on va récupérer un objet qui représentera un trou suite à cela, on lui créera une nouvelle animation puis on modifiera les masques de collision afin de préparer à arriver de notre pont.
-Pour la première animation, on créera une box de collision qui rempliera le trou (il se peut que la collision soit déjà réalisée de base lorsque vous avez importé l'objet.). N'oubliez pas de décocher la case qui modifie la collision de toutes les animations.
+Il nous reste à rajouter l'étape finale : le Donjon 
 
-![BoxCollision1](Images/BoxCollision1.png)
+Un donjon est un niveau de fin dans lequel le joueur va devoir affronter un boss. 
 
-Pour la deuxième animation essayer de séparer les collisions afin de faire un passage pour que notre personnage puisse passer. Placer le pont à l'endroit prévu à cet effet (entre les boxs de collision) et placer le en dessous du trou (Pour cela changer l'ordre Z de l'objet).
+## Partie 1 - accéder au Donjon
 
-![BoxCollision2](Images/BoxCollision2.png)
+### Nouveau niveau 
 
-Pour mettre en place ce système, nous allons ensuite créer un objet pour le bouton. Lui créer une variable. Lorsque le joueur interagit avec ce bouton (par exemple, en entrant en collision avec le bouton), nous allons changer l'état du bouton pour indiquer qu'il a été activé et nous allons créer un pont à un endroit spécifique sur la carte.
+Nous allons créer un nouveau niveau pour notre donjon. 
 
-![CodeButton](Images/CodeButton.png)
+Pour éviter de devoir recommencer tout le code du premier niveau, nous allons le **dupliquer**.
 
-# Partie 2 : Le bateau qui tire sur le joueur 🚤
+![Nouveau niveau]()
 
-![Bateau](Images/Ship.png)
+Le deuxième niveau est une copie exacte du premier. Il faut le renommer `Donjon` et le modifier : ajouter de nouveaux éléments de décors, changer le fond, .... 
 
-En plus du bouton du pont, nous allons également inclure un bateau qui tire sur le joueur. Ce bateau pourrait être situé sur une rivière ou un lac, et il tirerait des projectiles sur le joueur à intervalles réguliers.
+Voici un exemple de donjon : 
 
-Pour mettre en place ce système, nous allons d'abord créer un objet pour le bateau. Ensuite on va créer des variables de scène.
+![Donjon]()
 
-![VariableScène](Images/VariableScene.png)
+### La porte à clé 
 
-Nous allons ensuite programmer le bateau pour qu'il tire des projectiles à intervalles réguliers.
+Pour pouvoir pénétrer dans le donjon, le joueur devra déverouiller une porte au moyen d'une clé. 
 
-![CodeShip](Images/ShipCode.png)
+![Image clé et porte]()
 
-Cela ajoute un élément de défi au jeu, car le joueur doit éviter les projectiles tout en essayant de naviguer sur la carte. 🎯
+Lorsque le joueur entre en contact avec la porte, il ne peux rien faire tant qu'il n'a pas de clé.
 
-Félicitations à tous ! Vous avez réussi à terminer le premier niveau de notre jeu. C'est une grande réalisation et vous devriez être fiers de vous. Continuez comme ça, et je suis sûr que vous allez créer un jeu incroyable. Allez, on passe au niveau suivant ! 💪
+Lorsqu'il a une clé, il déverrouille la porte, ce qui lui permet d'entrer.
 
-[Donjon Map](https://github.com/g404-code-gaming/Zelda-Like-CodeGaming/blob/main/Cr%C3%A9ation-Du-Jeu/07_DonjonMap.md)
+Ajoutez une variable **Ouvert** à votre porte, pour savoir si elle est ouverte ou non.
+
+![porte variable]()
+
+Pour que le joueur puisse savoir comment interagir avec la porte, nous allons créer un texte d'`interaction` qui va lui indiquer quoi faire : 
+
+![texte porte]()
+
+Ensuite, Programmez la porte pour qu'elle s'ouvre lorsque le joueur lui apporte une clé. Une fois ouverte, le joueur peut passer au travers grâce à une touche d'interaction. 
+
+![porte code]()
+
+## Partie 2 - Dans le donjon
+
+Dans le donjon, nous allons ajouter quelques éléments supplémentaires pour le distinguer d'un niveau normal et faire qu'il fonctionne correctement. 
+
+### Retour au niveau 1
+
+Il est prévus de pouvoir retourner au niveau 1 en repassant par la porte d'entée. 
+
+Voici le programme qui permet de revenir au niveau précédent. 
+
+![porte code donjon]()
+
+> Attention, cela enlève toute la progression dans le donjon !
+
+### Le PNJ qui garde la porte 
+
+Dans le donjon, un PNJ garde la porte. Il n'est pas dangereux, mais bloque le passage du joueur tant que ce dernier ne lui paie pas une rançon. 
+
+![PNJ image]()
+
+Commençons par ajouter près du PNJ un texte `Textgarde` qui lui permettra de parler au joueur. 
+
+![PNJ Texte]()
+
+Ensuite, ajoutons le programme pour que le PNJ puisse exprimer ses intentions au joueur, et qu'il puisse recevoir de l'argent de ce dernier pour ouvrir le passage. 
+
+![PNJ Code]()
+
+> La touche C est choisie car elle est proche de la barre d'espace, mais vous pouvez choisir n'importe quelle autre touche.
+
+Testez votre programme pour vérifier que tout fonctionne. Lorsque le joueur possède 20 pièce et va voir le PNJ, il peut appuyer sur la touche `c` pour dépenser son argent et supprimer le Garde. 
+
+Avec ces nouveaux éléments, vous avez un niveau de donjon quasi-complet ! 
+
+Il ne manque que la partie finale et la plus importante du jeu Zelda : un Boss.
+
+

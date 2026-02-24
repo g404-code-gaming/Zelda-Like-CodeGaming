@@ -14,19 +14,19 @@ Nous allons créer un nouveau niveau pour notre donjon.
 
 Pour éviter de devoir recommencer tout le code du premier niveau, nous allons le **dupliquer**.
 
-![Nouveau niveau]()
+![Nouveau niveau](Images/6_nouveauniveau.jpg)
 
 Le deuxième niveau est une copie exacte du premier. Il faut le renommer `Donjon` et le modifier : ajouter de nouveaux éléments de décors, changer le fond, .... 
 
 Voici un exemple de donjon : 
 
-![Donjon]()
+![Donjon](Images/6_Donjon.jpg)
 
 ### La porte à clé 
 
 Pour pouvoir pénétrer dans le donjon, le joueur devra déverouiller une porte au moyen d'une clé. 
 
-![Image clé et porte]()
+![Image clé et porte](Images/6_porte.jpg)
 
 Lorsque le joueur entre en contact avec la porte, il ne peux rien faire tant qu'il n'a pas de clé.
 
@@ -34,15 +34,15 @@ Lorsqu'il a une clé, il déverrouille la porte, ce qui lui permet d'entrer.
 
 Ajoutez une variable **Ouvert** à votre porte, pour savoir si elle est ouverte ou non.
 
-![porte variable]()
+![porte variable](Images/6_porte.jpg)
 
 Pour que le joueur puisse savoir comment interagir avec la porte, nous allons créer un texte d'`interaction` qui va lui indiquer quoi faire : 
 
-![texte porte]()
+![texte porte](Images/6_texteinteraction.jpg)
 
 Ensuite, Programmez la porte pour qu'elle s'ouvre lorsque le joueur lui apporte une clé. Une fois ouverte, le joueur peut passer au travers grâce à une touche d'interaction. 
 
-![porte code]()
+![porte code](Images/6_porte_code.jpg)
 
 ## Partie 2 - Dans le donjon
 
@@ -54,7 +54,7 @@ Il est prévus de pouvoir retourner au niveau 1 en repassant par la porte d'ent�
 
 Voici le programme qui permet de revenir au niveau précédent. 
 
-![porte code donjon]()
+![porte code donjon](Images/6_porte_code_donjon.jpg)
 
 > Attention, cela enlève toute la progression dans le donjon !
 
@@ -62,19 +62,19 @@ Voici le programme qui permet de revenir au niveau précédent.
 
 Dans le donjon, un PNJ garde la porte. Il n'est pas dangereux, mais bloque le passage du joueur tant que ce dernier ne lui paie pas une rançon. 
 
-![PNJ image]()
+![PNJ image](Images/6_PNJ_image.jpg)
 
 Commençons par ajouter près du PNJ un texte `Textgarde` qui lui permettra de parler au joueur. 
 
-![PNJ Texte]()
+![PNJ Texte](Images/6_PNJ_texte.jpg)
 
 Ensuite, ajoutons le programme pour que le PNJ puisse exprimer ses intentions au joueur, et qu'il puisse recevoir de l'argent de ce dernier pour ouvrir le passage. 
 
-![PNJ Code]()
+![PNJ Code](Images/6_PNJ_code.jpg)
 
 > La touche C est choisie car elle est proche de la barre d'espace, mais vous pouvez choisir n'importe quelle autre touche.
 
-Testez votre programme pour vérifier que tout fonctionne. Lorsque le joueur possède 20 pièce et va voir le PNJ, il peut appuyer sur la touche `c` pour dépenser son argent et supprimer le Garde. 
+Testez votre programme pour vérifier que tout fonctionne. Lorsque le joueur possède 20 pièce et va voir le PNJ, il peut appuyer sur la touche `c` pour dépenser son argent et supprimer le Garde.
 
 Avec ces nouveaux éléments, vous avez un niveau de donjon quasi-complet ! 
 

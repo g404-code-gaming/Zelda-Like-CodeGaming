@@ -34,7 +34,7 @@ Lorsqu'il a une clé, il déverrouille la porte, ce qui lui permet d'entrer.
 
 Ajoutez une variable **Ouvert** à votre porte, pour savoir si elle est ouverte ou non.
 
-![porte variable](Images/6_porte.jpg)
+![porte variable](Images/6_porte_variable.jpg)
 
 Pour que le joueur puisse savoir comment interagir avec la porte, nous allons créer un texte d'`interaction` qui va lui indiquer quoi faire : 
 

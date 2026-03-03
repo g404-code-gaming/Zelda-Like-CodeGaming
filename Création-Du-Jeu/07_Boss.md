@@ -4,15 +4,13 @@ Pour conclure le travail sur ce jeu Zelda et proposer une fin de jeu, nous allon
 
 Le Boss est un ennemi spécial, très difficile, doté d'attaques spéciales.
 
-![image combat de fin](/image/7_image_combat_final.JPG) 
+![image combat de fin](Images/7_image_combat_final.JPG) 
 
 ## Préparation du boss 
 
 ### 1 - Création du boss 
 
 Ajoutez un objet **Boss** à votre niveau de Donjon. 
-
-![image boss]() 
 
 Ne placez pas le Boss dans la scène pour le moment, nous allons le faire apparaître par le programme.
 
@@ -26,13 +24,13 @@ Enfin, définissez les points de vie du Boss (personnellement, j'en ai mis 25).
 
 Dans notre jeu, le boss apparaît lorsque le personnage se déplace à travers une entrée. Il se retrouve enfermé et le boss apparaît.
 
-![image fin de niveau]() 
+![image fin de niveau](Images/7_fin_de_niveau.jpg) 
 
 Ajoutez une Box de déclenchement Trigger_Box. Il s'agit d'une zone invisible qui va détecter le personnage du joueur et déclencher l'apparition du boss et la fermeture de la salle.
 
 Vous pouvez créer cet objet à partir de zéro.
 
-![image trigger_box]() 
+![image trigger_box](Images/7_trigger_box.JPG) 
 
 Placez cet objet à l'entrée de votre salle de boss : il faut que le joueur soit obligé de la traverser pour entrer.
 
@@ -42,7 +40,7 @@ Ajoutez ensuite le programme pour que, lorsque votre joueur touche la **Trigger_
 
 > NOTE : les éléments en vert sur l'image suivante sont des coordonnées. Adaptez-les à votre niveau pour faire apparaître les objets au bon endroit.
 
-![image code trigger box]() 
+![image code trigger box](Images/7_trigger_box_code.JPG) 
 
 Testez votre programme pour vérifier que le boss et le mur apparaissent bien lorsque votre joueur entre dans la salle de fin. 
 
@@ -50,7 +48,7 @@ Testez votre programme pour vérifier que le boss et le mur apparaissent bien lo
 
 Tout d'abord, ajoutons un programme pour mettre à jour la barre de PV du boss et éviter qu'il ne puisse traverser les murs.
 
-![boss code]() 
+![boss code](Images/7_boss_code1.JPG) 
 
 Pour construire un Boss intéressant, plusieurs méthodes sont possibles :
 
@@ -58,19 +56,19 @@ Dans la partie qui suit, plusieurs actions sont possibles pour le boss, elles ne
 
 ### BONUS - Déplacement du boss 
 
-![image boss_deplacement]() 
+![image boss_deplacement](Images/7_bossdeplacement.JPG) 
 
 Pour éviter que le boss ne reste immobile, il est possible de lui ajouter un déplacement aléatoire dans le niveau.
 
 Lors de l'apparition du Boss, ajoutez un Chronomètre qui servira à déplacer le boss au fil du temps.
 
-![image boss_deplacement_code1]() 
+![image boss_deplacement_code1](Images/7_bossdeplacement_code1.JPG) 
 
 Ensuite, ajoutez le programme qui le fait changer de direction à chaque fois que le chronomètre dépasse une certaine valeur.
 
 > Attention, les paramètres en vert sont à adapter à votre niveau : ce sont des coordonnées.
 
-![image boss_deplacement_code2]() 
+![image boss_deplacement_code2](Images/7_bossdeplacement_code2.JPG) 
 
 Testez votre Boss pour voir s'il se déplace de manière erratique sur votre niveau.
 
@@ -78,17 +76,17 @@ Testez votre Boss pour voir s'il se déplace de manière erratique sur votre niv
 
 Pour permettre au boss d'attaquer le joueur à distance, il est possible de lui ajouter un lancer de projectile.
 
-![image boss_attaque]() 
+![image boss_attaque](Images/7_boss_attaque_image.JPG) 
 
 Ajoutez à la scène un **projectile** pour votre boss.
 
 Ajoutez ensuite le programme pour initier le chronomètre permettant de tirer des projectiles.
 
-![image boss_attaque_code1]() 
+![image boss_attaque_code1](Images/7_boss_attaque_code1.JPG) 
 
 Ajoutez ensuite le programme pour que le Boss tire des projectiles selon la valeur de son Chronomètre.
 
-![image boss_attaque_code2]() 
+![image boss_attaque_code2](Images/7_boss_attaque_code2.JPG) 
 
 > Note : vous pouvez aussi utiliser le comportement pour Tirer des balles.
 
@@ -98,7 +96,7 @@ Testez votre programme pour vérifier qu'il fonctionne correctement : normalemen
 
 Une autre attaque possible pour le boss serait d'invoquer une explosion qui force le joueur à être constamment en déplacement pour ne pas mourir. 
 
-![image boss_explosion]() 
+![image boss_explosion](Images/7_boss_explosion.JPG) 
 
 Ajoutez à la scène deux objets : 
   - un objet **bombe** qui va être invoqué par le Boss sur la position du joueur.
@@ -106,11 +104,11 @@ Ajoutez à la scène deux objets :
 
 Ajoutez ensuite le programme pour initier le chronomètre permettant d'invoquer l'explosion. 
 
-![image boss_explosion_code1]() 
+![image boss_explosion_code1](Images/7_boss_explosion_code1.JPG) 
 
 Ajoutez ensuite le programme pour que le Boss invoque des explosions selon la valeur de son Chronomètre. 
 
-![image boss_explosion_code2]() 
+![image boss_explosion_code2](Images/Images/7_boss_explosion_code2.JPG) 
 
 Testez votre programme pour vérifier qu'il fonctionne correctement : le Boss invoque sur le joueur une bombe, qui, quelques secondes plus tard, explose.
 

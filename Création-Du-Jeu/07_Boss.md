@@ -108,7 +108,7 @@ Ajoutez ensuite le programme pour initier le chronomètre permettant d'invoquer 
 
 Ajoutez ensuite le programme pour que le Boss invoque des explosions selon la valeur de son Chronomètre. 
 
-![image boss_explosion_code2](Images/Images/7_boss_explosion_code2.JPG) 
+![image boss_explosion_code2](Images/7_boss_explosion_code2.JPG) 
 
 Testez votre programme pour vérifier qu'il fonctionne correctement : le Boss invoque sur le joueur une bombe, qui, quelques secondes plus tard, explose.
 

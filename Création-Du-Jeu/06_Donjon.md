@@ -80,4 +80,4 @@ Avec ces nouveaux éléments, vous avez un niveau de donjon quasi-complet !
 
 Il ne manque que la partie finale et la plus importante du jeu Zelda : un Boss.
 
-
+[07 - Boss du jeu](https://github.com/g404-code-gaming/Zelda-Like-CodeGaming/blob/main/Cr%C3%A9ation-Du-Jeu/07_Boss.md)

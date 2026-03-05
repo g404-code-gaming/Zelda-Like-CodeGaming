@@ -113,3 +113,5 @@ Ajoutez ensuite le programme pour que le Boss invoque des explosions selon la va
 Testez votre programme pour vérifier qu'il fonctionne correctement : le Boss invoque sur le joueur une bombe, qui, quelques secondes plus tard, explose.
 
 Avec les éléments suivants, vous avez tout ce qu'il faut pour faire un Boss efficace.
+
+[Fin](https://github.com/g404-code-gaming/Zelda-Like-CodeGaming/blob/main/Cr%C3%A9ation-Du-Jeu/08_Fin.md)

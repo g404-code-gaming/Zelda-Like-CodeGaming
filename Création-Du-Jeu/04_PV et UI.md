@@ -26,6 +26,9 @@ Ensuite, créer le Groupe **Danger**. Un Groupe qui contiendra tout les objets d
 
 ![groupe danger](Images/4_PV_groupe.JPG) 
 
+Pour finir, ajouter une nouvelle variable **Invincible** pour votre personnage. 
+Il s'agit d'une variable booléenne Fausse, qui servira à rendre notre personnage temporairement invincible en subissant des dégâts. 
+
 ### Programme 
 
 Ajoutez les deux évènements permettant de faire fonctionner la perte de point de vie et la mort du personnage. 

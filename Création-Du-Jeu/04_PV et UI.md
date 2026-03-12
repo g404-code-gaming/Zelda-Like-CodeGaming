@@ -37,6 +37,10 @@ Lorsque le personnage meurre, on relance la scène en cours pour faire recommenc
 
 ![PV code](Images/4_PV_code.JPG) 
 
+Pour remettre les PV à leur valeur initiales, ajoutez l'évènement suivant: 
+
+![PV code](Images/4_PV_code2.JPG)
+
 Après avoir ajouté ces évènement, testez votre jeu pour voir si il fonctione correctement. 
 
 ### BONUS - information visuelle des dégâts 
